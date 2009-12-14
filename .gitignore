@@ -1,1 +1,2 @@
-config/databases.yml
+/config/databases.yml
+/cache/*
