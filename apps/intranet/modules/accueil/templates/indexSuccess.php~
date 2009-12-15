@@ -1,0 +1,4 @@
+<?php
+echo __('Bonsoir');
+echo $toto;
+?>

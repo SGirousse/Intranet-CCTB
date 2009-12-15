@@ -12,3 +12,810 @@ Dec 14 17:16:52 symfony [info] {sfWebDebugLogger} Factories 81.64 ms (1)
 Dec 14 17:16:52 symfony [info] {sfWebDebugLogger} Action "default/index" 0.23 ms (1)
 Dec 14 17:16:52 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 14.16 ms (1)
 Dec 14 17:16:52 symfony [info] {sfWebResponse} Send content (44765 o)
+Dec 14 17:46:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 14 17:46:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 14 17:46:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 14 17:46:23 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 14 17:46:23 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Dec 14 17:46:23 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 14 17:46:23 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 14 17:46:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 14 17:46:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 14 17:46:23 symfony [info] {sfWebDebugLogger} Configuration 16.88 ms (10)
+Dec 14 17:46:23 symfony [info] {sfWebDebugLogger} Factories 28.33 ms (1)
+Dec 14 17:46:23 symfony [info] {sfWebDebugLogger} Action "default/index" 0.24 ms (1)
+Dec 14 17:46:23 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 11.85 ms (1)
+Dec 14 17:46:23 symfony [info] {sfWebResponse} Send content (44799 o)
+Dec 15 10:57:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 10:57:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 10:57:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 10:57:24 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 10:57:24 symfony [info] {accueilActions} Forward to action "default/module"
+Dec 15 10:57:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 10:57:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 10:57:24 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Dec 15 10:57:24 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/moduleSuccess.php"
+Dec 15 10:57:24 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 15 10:57:24 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 15 10:57:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 10:57:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 10:57:24 symfony [info] {sfWebDebugLogger} Configuration 101.42 ms (13)
+Dec 15 10:57:24 symfony [info] {sfWebDebugLogger} Factories 212.09 ms (1)
+Dec 15 10:57:24 symfony [info] {sfWebDebugLogger} Action "accueil/index" 24.77 ms (1)
+Dec 15 10:57:24 symfony [info] {sfWebDebugLogger} Action "default/module" 0.28 ms (1)
+Dec 15 10:57:24 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 17.37 ms (1)
+Dec 15 10:57:24 symfony [info] {sfWebResponse} Send content (69144 o)
+Dec 15 10:57:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 10:57:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 10:57:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 10:57:26 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 10:57:26 symfony [info] {accueilActions} Forward to action "default/module"
+Dec 15 10:57:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 10:57:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 10:57:26 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Dec 15 10:57:26 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/moduleSuccess.php"
+Dec 15 10:57:26 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 15 10:57:26 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 15 10:57:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 10:57:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 10:57:26 symfony [info] {sfWebDebugLogger} Configuration 1.66 ms (12)
+Dec 15 10:57:26 symfony [info] {sfWebDebugLogger} Factories 27.69 ms (1)
+Dec 15 10:57:26 symfony [info] {sfWebDebugLogger} Action "accueil/index" 15.29 ms (1)
+Dec 15 10:57:26 symfony [info] {sfWebDebugLogger} Action "default/module" 0.27 ms (1)
+Dec 15 10:57:26 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 11.24 ms (1)
+Dec 15 10:57:26 symfony [info] {sfWebResponse} Send content (69173 o)
+Dec 15 10:58:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 10:58:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 10:58:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 10:58:02 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 10:58:02 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 10:58:02 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 10:58:02 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 10:58:02 symfony [err] {InvalidArgumentException} Unable to load "JavascriptHelper.php" helper in: SF_ROOT_DIR/apps/intranet/modules/accueil/lib/helper, SF_ROOT_DIR/apps/intranet/lib/helper, SF_ROOT_DIR/lib/helper, SF_ROOT_DIR/lib/vendor/symfony/lib/helper.
+Dec 15 10:58:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 15 10:58:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 10:58:02 symfony [info] {sfWebDebugLogger} Configuration 12.99 ms (10)
+Dec 15 10:58:02 symfony [info] {sfWebDebugLogger} Factories 29.71 ms (1)
+Dec 15 10:58:02 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 10:58:02 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 77.83 ms (1)
+Dec 15 10:59:00 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 10:59:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 10:59:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 10:59:00 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 10:59:00 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 10:59:00 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 10:59:00 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 10:59:00 symfony [info] {main} Get slot "title"
+Dec 15 10:59:00 symfony [err] {sfConfigurationException} The component slot "meteo" is not set.
+Dec 15 10:59:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 15 10:59:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 10:59:00 symfony [info] {sfWebDebugLogger} Configuration 35.91 ms (11)
+Dec 15 10:59:00 symfony [info] {sfWebDebugLogger} Factories 29.82 ms (1)
+Dec 15 10:59:00 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 10:59:00 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 97.43 ms (1)
+Dec 15 10:59:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 10:59:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 10:59:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 10:59:24 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 10:59:24 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 10:59:24 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 10:59:24 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 10:59:25 symfony [info] {main} Get slot "title"
+Dec 15 10:59:25 symfony [err] {sfConfigurationException} The component slot "menuhaut" is not set.
+Dec 15 10:59:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 15 10:59:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 10:59:25 symfony [info] {sfWebDebugLogger} Configuration 36.86 ms (11)
+Dec 15 10:59:25 symfony [info] {sfWebDebugLogger} Factories 28.95 ms (1)
+Dec 15 10:59:25 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 10:59:25 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 82.91 ms (1)
+Dec 15 11:01:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:01:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:01:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:01:05 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:01:05 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:01:05 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:05 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:05 symfony [info] {main} Get slot "title"
+Dec 15 11:01:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:01:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:01:05 symfony [info] {sfWebDebugLogger} Configuration 36.91 ms (11)
+Dec 15 11:01:05 symfony [info] {sfWebDebugLogger} Factories 29.80 ms (1)
+Dec 15 11:01:05 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:01:05 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 50.34 ms (1)
+Dec 15 11:01:05 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:01:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:01:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:01:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:01:51 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:01:51 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:01:51 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:51 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:51 symfony [info] {main} Get slot "title"
+Dec 15 11:01:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:01:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:01:51 symfony [info] {sfWebDebugLogger} Configuration 35.86 ms (11)
+Dec 15 11:01:51 symfony [info] {sfWebDebugLogger} Factories 28.65 ms (1)
+Dec 15 11:01:51 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 11:01:51 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 48.12 ms (1)
+Dec 15 11:01:51 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:01:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:01:53 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {main} Get slot "title"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Configuration 39.40 ms (11)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Factories 29.06 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 51.87 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:01:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:01:53 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {main} Get slot "title"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Configuration 41.35 ms (11)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Factories 28.84 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 53.73 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:01:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:01:53 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {main} Get slot "title"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Configuration 35.19 ms (11)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Factories 29.83 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 47.13 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:01:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:01:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:01:53 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:01:53 symfony [info] {main} Get slot "title"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Configuration 34.96 ms (11)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Factories 27.76 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 46.74 ms (1)
+Dec 15 11:01:53 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:05:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:05:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:05:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:05:02 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:05:02 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:05:02 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:02 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:02 symfony [info] {main} Get slot "title"
+Dec 15 11:05:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:05:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:05:02 symfony [info] {sfWebDebugLogger} Configuration 36.02 ms (11)
+Dec 15 11:05:02 symfony [info] {sfWebDebugLogger} Factories 28.10 ms (1)
+Dec 15 11:05:02 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:05:02 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 47.89 ms (1)
+Dec 15 11:05:02 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:05:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:05:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:05:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:05:03 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:03 symfony [info] {main} Get slot "title"
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Configuration 36.86 ms (11)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Factories 29.14 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 48.84 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:05:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:05:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:05:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:05:03 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:03 symfony [info] {main} Get slot "title"
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Configuration 38.33 ms (11)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Factories 30.45 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 50.87 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:05:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:05:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:05:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:05:03 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:03 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:03 symfony [info] {main} Get slot "title"
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Configuration 37.94 ms (11)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Factories 28.51 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 49.67 ms (1)
+Dec 15 11:05:03 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:05:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:05:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:05:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:05:39 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:05:39 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:05:39 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:39 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:05:39 symfony [info] {main} Get slot "title"
+Dec 15 11:05:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:05:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:05:39 symfony [info] {sfWebDebugLogger} Configuration 35.83 ms (11)
+Dec 15 11:05:39 symfony [info] {sfWebDebugLogger} Factories 27.92 ms (1)
+Dec 15 11:05:39 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:05:39 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 47.82 ms (1)
+Dec 15 11:05:39 symfony [info] {sfWebResponse} Send content (47992 o)
+Dec 15 11:06:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:06:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:06:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:06:39 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:06:39 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:06:39 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:06:39 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:06:39 symfony [info] {main} Get slot "title"
+Dec 15 11:06:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:06:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:06:39 symfony [info] {sfWebDebugLogger} Configuration 37.88 ms (11)
+Dec 15 11:06:39 symfony [info] {sfWebDebugLogger} Factories 28.12 ms (1)
+Dec 15 11:06:39 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:06:39 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 50.17 ms (1)
+Dec 15 11:06:40 symfony [info] {sfWebResponse} Send content (48066 o)
+Dec 15 11:06:40 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:06:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:06:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:06:40 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:06:40 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:06:41 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:06:41 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:06:41 symfony [info] {main} Get slot "title"
+Dec 15 11:06:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:06:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:06:41 symfony [info] {sfWebDebugLogger} Configuration 35.40 ms (11)
+Dec 15 11:06:41 symfony [info] {sfWebDebugLogger} Factories 26.23 ms (1)
+Dec 15 11:06:41 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.22 ms (1)
+Dec 15 11:06:41 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 46.84 ms (1)
+Dec 15 11:06:41 symfony [info] {sfWebResponse} Send content (48066 o)
+Dec 15 11:07:00 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:07:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:07:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:07:00 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:07:00 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:07:00 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:07:00 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:07:01 symfony [info] {main} Get slot "title"
+Dec 15 11:07:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:07:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:07:01 symfony [info] {sfWebDebugLogger} Configuration 35.49 ms (11)
+Dec 15 11:07:01 symfony [info] {sfWebDebugLogger} Factories 28.02 ms (1)
+Dec 15 11:07:01 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 11:07:01 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 47.34 ms (1)
+Dec 15 11:07:01 symfony [info] {sfWebResponse} Send content (48066 o)
+Dec 15 11:08:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:08:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:08:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:08:56 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:08:56 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:08:56 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:08:56 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:08:56 symfony [info] {main} Get slot "title"
+Dec 15 11:08:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:08:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:08:56 symfony [info] {sfWebDebugLogger} Configuration 38.34 ms (11)
+Dec 15 11:08:56 symfony [info] {sfWebDebugLogger} Factories 28.35 ms (1)
+Dec 15 11:08:56 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:08:56 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 50.35 ms (1)
+Dec 15 11:08:56 symfony [info] {sfWebResponse} Send content (48135 o)
+Dec 15 11:09:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:09:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:09:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:09:21 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:09:21 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:12:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:12:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:12:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:12:22 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:12:22 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:12:23 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:12:23 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:12:23 symfony [info] {main} Get slot "title"
+Dec 15 11:12:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:12:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:12:23 symfony [info] {sfWebDebugLogger} Configuration 31.26 ms (10)
+Dec 15 11:12:23 symfony [info] {sfWebDebugLogger} Factories 267.90 ms (1)
+Dec 15 11:12:23 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 11:12:23 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 127.17 ms (1)
+Dec 15 11:12:23 symfony [info] {sfWebResponse} Send content (48154 o)
+Dec 15 11:14:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:14:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:14:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:14:34 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:14:34 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:14:34 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:14:34 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:14:34 symfony [info] {main} Get slot "title"
+Dec 15 11:14:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:14:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:14:34 symfony [info] {sfWebDebugLogger} Configuration 45.86 ms (11)
+Dec 15 11:14:34 symfony [info] {sfWebDebugLogger} Factories 32.54 ms (1)
+Dec 15 11:14:34 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.66 ms (1)
+Dec 15 11:14:34 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 86.87 ms (1)
+Dec 15 11:14:34 symfony [info] {sfWebResponse} Send content (48153 o)
+Dec 15 11:14:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:14:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:14:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:14:35 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:14:35 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:14:35 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:14:35 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:14:35 symfony [info] {main} Get slot "title"
+Dec 15 11:14:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:14:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:14:35 symfony [info] {sfWebDebugLogger} Configuration 38.50 ms (11)
+Dec 15 11:14:35 symfony [info] {sfWebDebugLogger} Factories 34.47 ms (1)
+Dec 15 11:14:35 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 11:14:35 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 54.08 ms (1)
+Dec 15 11:14:35 symfony [info] {sfWebResponse} Send content (48153 o)
+Dec 15 11:14:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:14:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:14:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:14:55 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:14:55 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:14:55 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:14:55 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:14:55 symfony [info] {main} Get slot "title"
+Dec 15 11:14:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:14:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:14:55 symfony [info] {sfWebDebugLogger} Configuration 36.36 ms (11)
+Dec 15 11:14:55 symfony [info] {sfWebDebugLogger} Factories 34.54 ms (1)
+Dec 15 11:14:55 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 11:14:55 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 50.02 ms (1)
+Dec 15 11:14:55 symfony [info] {sfWebResponse} Send content (48148 o)
+Dec 15 11:18:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:18:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:18:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:18:33 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:18:33 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:18:33 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:18:33 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:18:33 symfony [info] {main} Get slot "title"
+Dec 15 11:18:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:18:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:18:33 symfony [info] {sfWebDebugLogger} Configuration 28.99 ms (10)
+Dec 15 11:18:33 symfony [info] {sfWebDebugLogger} Factories 41.08 ms (1)
+Dec 15 11:18:33 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 11:18:33 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 41.06 ms (1)
+Dec 15 11:18:33 symfony [info] {sfWebResponse} Send content (48148 o)
+Dec 15 11:21:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:21:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:21:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:21:04 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:21:04 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:21:04 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:21:04 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:21:04 symfony [info] {main} Get slot "title"
+Dec 15 11:21:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:21:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:21:04 symfony [info] {sfWebDebugLogger} Configuration 36.99 ms (11)
+Dec 15 11:21:04 symfony [info] {sfWebDebugLogger} Factories 35.61 ms (1)
+Dec 15 11:21:04 symfony [info] {sfWebDebugLogger} Action "accueil/index" 1.82 ms (1)
+Dec 15 11:21:04 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 52.44 ms (1)
+Dec 15 11:21:04 symfony [info] {sfWebResponse} Send content (48154 o)
+Dec 15 11:21:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:21:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:21:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:21:05 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:21:05 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:21:05 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:21:05 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:21:05 symfony [info] {main} Get slot "title"
+Dec 15 11:21:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:21:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:21:05 symfony [info] {sfWebDebugLogger} Configuration 36.70 ms (11)
+Dec 15 11:21:05 symfony [info] {sfWebDebugLogger} Factories 36.43 ms (1)
+Dec 15 11:21:05 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 11:21:05 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 51.64 ms (1)
+Dec 15 11:21:05 symfony [info] {sfWebResponse} Send content (48157 o)
+Dec 15 11:22:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:22:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:22:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:22:47 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:22:47 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:22:47 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php on line 2 (Undefined variable: helloworld)
+Dec 15 11:22:47 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:22:47 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:22:47 symfony [info] {main} Get slot "title"
+Dec 15 11:22:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:22:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:22:47 symfony [info] {sfWebDebugLogger} Configuration 37.03 ms (11)
+Dec 15 11:22:47 symfony [info] {sfWebDebugLogger} Factories 36.33 ms (1)
+Dec 15 11:22:47 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:22:47 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 52.08 ms (1)
+Dec 15 11:22:47 symfony [info] {sfWebResponse} Send content (48263 o)
+Dec 15 11:22:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:22:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:22:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:22:59 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:22:59 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:23:00 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:23:00 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:23:00 symfony [info] {main} Get slot "title"
+Dec 15 11:23:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:23:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:23:00 symfony [info] {sfWebDebugLogger} Configuration 36.19 ms (11)
+Dec 15 11:23:00 symfony [info] {sfWebDebugLogger} Factories 34.71 ms (1)
+Dec 15 11:23:00 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.48 ms (1)
+Dec 15 11:23:00 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 50.23 ms (1)
+Dec 15 11:23:00 symfony [info] {sfWebResponse} Send content (48157 o)
+Dec 15 11:23:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:23:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:23:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:23:20 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:23:20 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:23:20 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:23:20 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:23:20 symfony [info] {main} Get slot "title"
+Dec 15 11:23:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:23:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:23:20 symfony [info] {sfWebDebugLogger} Configuration 57.16 ms (11)
+Dec 15 11:23:20 symfony [info] {sfWebDebugLogger} Factories 36.00 ms (1)
+Dec 15 11:23:20 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 11:23:20 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 60.76 ms (1)
+Dec 15 11:23:20 symfony [info] {sfWebResponse} Send content (48090 o)
+Dec 15 11:33:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:33:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:33:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:33:01 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:33:01 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:33:01 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:33:01 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:33:01 symfony [info] {main} Get slot "title"
+Dec 15 11:33:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:33:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:33:01 symfony [info] {sfWebDebugLogger} Configuration 35.43 ms (11)
+Dec 15 11:33:01 symfony [info] {sfWebDebugLogger} Factories 35.31 ms (1)
+Dec 15 11:33:01 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 11:33:01 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 49.19 ms (1)
+Dec 15 11:33:01 symfony [info] {sfWebResponse} Send content (48058 o)
+Dec 15 11:41:25 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:41:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:41:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:41:25 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:41:25 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:41:25 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:41:25 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:41:25 symfony [info] {main} Get slot "title"
+Dec 15 11:41:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:41:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:41:25 symfony [info] {sfWebDebugLogger} Configuration 37.01 ms (11)
+Dec 15 11:41:25 symfony [info] {sfWebDebugLogger} Factories 37.84 ms (1)
+Dec 15 11:41:25 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.29 ms (1)
+Dec 15 11:41:25 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 52.05 ms (1)
+Dec 15 11:41:25 symfony [info] {sfWebResponse} Send content (48090 o)
+Dec 15 11:42:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:42:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:42:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:42:01 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:42:01 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:42:01 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:42:01 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:42:01 symfony [info] {main} Get slot "title"
+Dec 15 11:42:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:42:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:42:01 symfony [info] {sfWebDebugLogger} Configuration 35.72 ms (11)
+Dec 15 11:42:01 symfony [info] {sfWebDebugLogger} Factories 36.06 ms (1)
+Dec 15 11:42:01 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 11:42:01 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 49.72 ms (1)
+Dec 15 11:42:01 symfony [info] {sfWebResponse} Send content (48158 o)
+Dec 15 11:42:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:42:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:42:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:42:34 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:42:34 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:42:34 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:42:34 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:42:34 symfony [info] {main} Get slot "title"
+Dec 15 11:42:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:42:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:42:34 symfony [info] {sfWebDebugLogger} Configuration 34.84 ms (11)
+Dec 15 11:42:34 symfony [info] {sfWebDebugLogger} Factories 32.51 ms (1)
+Dec 15 11:42:34 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 11:42:34 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 47.57 ms (1)
+Dec 15 11:42:34 symfony [info] {sfWebResponse} Send content (48152 o)
+Dec 15 11:47:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:47:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:47:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:47:44 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:47:44 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:47:44 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:47:44 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:47:44 symfony [info] {main} Get slot "title"
+Dec 15 11:47:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:47:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:47:44 symfony [info] {sfWebDebugLogger} Configuration 35.44 ms (11)
+Dec 15 11:47:44 symfony [info] {sfWebDebugLogger} Factories 32.61 ms (1)
+Dec 15 11:47:44 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:47:44 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 48.23 ms (1)
+Dec 15 11:47:44 symfony [info] {sfWebResponse} Send content (48120 o)
+Dec 15 11:56:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 11:56:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 11:56:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 11:56:51 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 11:56:51 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 11:56:51 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:56:51 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 11:56:51 symfony [info] {main} Get slot "title"
+Dec 15 11:56:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 11:56:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 11:56:51 symfony [info] {sfWebDebugLogger} Configuration 36.15 ms (11)
+Dec 15 11:56:51 symfony [info] {sfWebDebugLogger} Factories 35.17 ms (1)
+Dec 15 11:56:51 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 11:56:51 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 49.60 ms (1)
+Dec 15 11:56:51 symfony [info] {sfWebResponse} Send content (48120 o)
+Dec 15 12:10:15 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:10:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:10:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:10:15 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:10:15 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:10:15 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:10:15 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:10:15 symfony [info] {main} Get slot "title"
+Dec 15 12:10:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:10:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:10:15 symfony [info] {sfWebDebugLogger} Configuration 116.80 ms (10)
+Dec 15 12:10:15 symfony [info] {sfWebDebugLogger} Factories 82.69 ms (1)
+Dec 15 12:10:15 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 12:10:15 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 42.97 ms (1)
+Dec 15 12:10:15 symfony [info] {sfWebResponse} Send content (48099 o)
+Dec 15 12:10:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:10:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:10:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:10:30 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:10:30 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:10:30 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:10:30 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:10:30 symfony [info] {main} Get slot "title"
+Dec 15 12:10:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:10:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:10:30 symfony [info] {sfWebDebugLogger} Configuration 35.45 ms (11)
+Dec 15 12:10:30 symfony [info] {sfWebDebugLogger} Factories 32.42 ms (1)
+Dec 15 12:10:30 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.67 ms (1)
+Dec 15 12:10:30 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 48.48 ms (1)
+Dec 15 12:10:30 symfony [info] {sfWebResponse} Send content (48127 o)
+Dec 15 12:10:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:10:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:10:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:10:31 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:10:31 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:10:31 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:10:31 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:10:31 symfony [info] {main} Get slot "title"
+Dec 15 12:10:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:10:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:10:31 symfony [info] {sfWebDebugLogger} Configuration 34.75 ms (11)
+Dec 15 12:10:31 symfony [info] {sfWebDebugLogger} Factories 31.98 ms (1)
+Dec 15 12:10:31 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.24 ms (1)
+Dec 15 12:10:31 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 48.05 ms (1)
+Dec 15 12:10:31 symfony [info] {sfWebResponse} Send content (48124 o)
+Dec 15 12:11:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:11:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:11:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:11:11 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:11:11 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:11:11 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:11 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:11 symfony [info] {main} Get slot "title"
+Dec 15 12:11:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:11:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:11:11 symfony [info] {sfWebDebugLogger} Configuration 38.22 ms (11)
+Dec 15 12:11:11 symfony [info] {sfWebDebugLogger} Factories 44.51 ms (1)
+Dec 15 12:11:11 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 12:11:11 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 55.79 ms (1)
+Dec 15 12:11:11 symfony [info] {sfWebResponse} Send content (48124 o)
+Dec 15 12:11:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:11:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:11:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:11:30 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:11:30 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:11:30 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:30 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:30 symfony [info] {main} Get slot "title"
+Dec 15 12:11:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:11:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:11:30 symfony [info] {sfWebDebugLogger} Configuration 27.60 ms (10)
+Dec 15 12:11:30 symfony [info] {sfWebDebugLogger} Factories 32.27 ms (1)
+Dec 15 12:11:30 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 12:11:30 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 39.94 ms (1)
+Dec 15 12:11:30 symfony [info] {sfWebResponse} Send content (48121 o)
+Dec 15 12:11:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:11:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:11:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:11:31 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:11:31 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:11:31 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:31 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:31 symfony [info] {main} Get slot "title"
+Dec 15 12:11:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:11:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:11:31 symfony [info] {sfWebDebugLogger} Configuration 36.34 ms (11)
+Dec 15 12:11:31 symfony [info] {sfWebDebugLogger} Factories 36.13 ms (1)
+Dec 15 12:11:31 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.47 ms (1)
+Dec 15 12:11:31 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 50.42 ms (1)
+Dec 15 12:11:31 symfony [info] {sfWebResponse} Send content (48121 o)
+Dec 15 12:11:38 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:11:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:11:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:11:38 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:11:38 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:11:38 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:38 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:39 symfony [info] {main} Get slot "title"
+Dec 15 12:11:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:11:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:11:39 symfony [info] {sfWebDebugLogger} Configuration 35.80 ms (11)
+Dec 15 12:11:39 symfony [info] {sfWebDebugLogger} Factories 33.54 ms (1)
+Dec 15 12:11:39 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 12:11:39 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 49.32 ms (1)
+Dec 15 12:11:39 symfony [info] {sfWebResponse} Send content (48121 o)
+Dec 15 12:11:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:11:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:11:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:11:44 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:11:44 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:11:44 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:44 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:44 symfony [info] {main} Get slot "title"
+Dec 15 12:11:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:11:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:11:44 symfony [info] {sfWebDebugLogger} Configuration 119.25 ms (10)
+Dec 15 12:11:44 symfony [info] {sfWebDebugLogger} Factories 84.12 ms (1)
+Dec 15 12:11:44 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 12:11:44 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 43.16 ms (1)
+Dec 15 12:11:44 symfony [info] {sfWebResponse} Send content (48119 o)
+Dec 15 12:11:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:11:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:11:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:11:45 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:11:45 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:11:45 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:45 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:45 symfony [info] {main} Get slot "title"
+Dec 15 12:11:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:11:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:11:45 symfony [info] {sfWebDebugLogger} Configuration 34.98 ms (11)
+Dec 15 12:11:45 symfony [info] {sfWebDebugLogger} Factories 32.11 ms (1)
+Dec 15 12:11:45 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 12:11:45 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 48.33 ms (1)
+Dec 15 12:11:45 symfony [info] {sfWebResponse} Send content (48118 o)
+Dec 15 12:11:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 12:11:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 12:11:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 12:11:53 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 12:11:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 12:11:53 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:53 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 12:11:53 symfony [info] {main} Get slot "title"
+Dec 15 12:11:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 12:11:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 12:11:53 symfony [info] {sfWebDebugLogger} Configuration 34.80 ms (11)
+Dec 15 12:11:53 symfony [info] {sfWebDebugLogger} Factories 31.96 ms (1)
+Dec 15 12:11:53 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 12:11:53 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 48.18 ms (1)
+Dec 15 12:11:53 symfony [info] {sfWebResponse} Send content (48118 o)
+Dec 15 13:42:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 13:42:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 13:42:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 13:42:14 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 13:42:14 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 13:42:14 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:14 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:14 symfony [info] {main} Get slot "title"
+Dec 15 13:42:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 13:42:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 13:42:14 symfony [info] {sfWebDebugLogger} Configuration 27.17 ms (10)
+Dec 15 13:42:14 symfony [info] {sfWebDebugLogger} Factories 35.04 ms (1)
+Dec 15 13:42:14 symfony [info] {sfWebDebugLogger} Action "accueil/index" 1.01 ms (1)
+Dec 15 13:42:14 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 39.56 ms (1)
+Dec 15 13:42:14 symfony [info] {sfWebResponse} Send content (47924 o)
+Dec 15 13:42:15 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 13:42:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 13:42:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 13:42:15 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 13:42:15 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 13:42:15 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:15 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:15 symfony [info] {main} Get slot "title"
+Dec 15 13:42:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 13:42:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 13:42:15 symfony [info] {sfWebDebugLogger} Configuration 55.73 ms (11)
+Dec 15 13:42:15 symfony [info] {sfWebDebugLogger} Factories 33.37 ms (1)
+Dec 15 13:42:15 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.23 ms (1)
+Dec 15 13:42:15 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 68.98 ms (1)
+Dec 15 13:42:16 symfony [info] {sfWebResponse} Send content (48121 o)
+Dec 15 13:42:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 13:42:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 13:42:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 13:42:16 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 13:42:16 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 13:42:16 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:16 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:16 symfony [info] {main} Get slot "title"
+Dec 15 13:42:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 13:42:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} Configuration 71.28 ms (11)
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} Factories 33.42 ms (1)
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 104.42 ms (1)
+Dec 15 13:42:16 symfony [info] {sfWebResponse} Send content (48122 o)
+Dec 15 13:42:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 13:42:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 13:42:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 13:42:16 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 13:42:16 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 13:42:16 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:16 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:16 symfony [info] {main} Get slot "title"
+Dec 15 13:42:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 13:42:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} Configuration 96.31 ms (11)
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} Factories 34.74 ms (1)
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 13:42:16 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 40.99 ms (1)
+Dec 15 13:42:16 symfony [info] {sfWebResponse} Send content (48121 o)
+Dec 15 13:42:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 13:42:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 13:42:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 13:42:21 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 13:42:21 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 13:42:21 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:21 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:21 symfony [info] {main} Get slot "title"
+Dec 15 13:42:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 13:42:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 13:42:21 symfony [info] {sfWebDebugLogger} Configuration 34.85 ms (11)
+Dec 15 13:42:21 symfony [info] {sfWebDebugLogger} Factories 32.28 ms (1)
+Dec 15 13:42:21 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Dec 15 13:42:21 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 47.19 ms (1)
+Dec 15 13:42:21 symfony [info] {sfWebResponse} Send content (48121 o)
+Dec 15 13:42:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Dec 15 13:42:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 15 13:42:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 15 13:42:27 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Dec 15 13:42:27 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Dec 15 13:42:27 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:27 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Dec 15 13:42:27 symfony [info] {main} Get slot "title"
+Dec 15 13:42:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 15 13:42:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 15 13:42:27 symfony [info] {sfWebDebugLogger} Configuration 118.66 ms (10)
+Dec 15 13:42:27 symfony [info] {sfWebDebugLogger} Factories 86.31 ms (1)
+Dec 15 13:42:27 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.25 ms (1)
+Dec 15 13:42:27 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 43.31 ms (1)
+Dec 15 13:42:27 symfony [info] {sfWebResponse} Send content (48125 o)
