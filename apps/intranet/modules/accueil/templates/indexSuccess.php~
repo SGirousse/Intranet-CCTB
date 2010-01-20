@@ -1,8 +1,10 @@
 <?php slot('sousMenu') ?>
   <!-- Sous menu pour la page d'accueil-->
-  <h1>User details</h1>
-  <p>name: </p>
-  <p>email: </p>
+  <ul>
+  	<li>Action 1</li>
+  	<li>Action 2</li>
+  	<li>Action 3</li>
+  </ul>
 <?php end_slot() ?>
 
 <?php
@@ -14,3 +16,8 @@ echo '<br>';
 echo format_date('2009-11-25');
 echo '<br>';
 ?>
+<form action="<?php echo url_for('accueil/index') ?>" method="post" >
+<?php
+echo $form;
+?>
+</form>

@@ -14660,3 +14660,900 @@ déc. 23 11:45:29 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 18.
 déc. 23 11:45:29 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.03 ms (1)
 déc. 23 11:45:29 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 11.78 ms (1)
 déc. 23 11:45:29 symfony [info] {sfWebResponse} Send content (88783 o)
+Jan 20 15:22:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:22:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:22:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:22:48 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:22:48 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:22:48 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:22:48 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:22:48 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:22:48 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:22:48 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:22:48 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:22:48 symfony [info] {main} Get slot "title"
+Jan 20 15:22:48 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 15:22:48 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 15:22:48 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 15:22:48 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 15:22:48 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 15:22:48 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 15:22:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 15:22:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Configuration 87.41 ms (14)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Factories 231.32 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.26 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 124.42 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.99 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.02 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 1.02 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.93 ms (1)
+Jan 20 15:22:48 symfony [info] {sfWebResponse} Send content (88468 o)
+Jan 20 15:49:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:49:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:49:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:49:02 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:49:02 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:49:02 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:49:02 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:49:02 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:49:02 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:49:02 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:49:02 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:49:02 symfony [info] {main} Get slot "title"
+Jan 20 15:49:02 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 15:49:02 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 15:49:02 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 15:49:02 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 15:49:02 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 15:49:02 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 15:49:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 15:49:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Configuration 48.58 ms (14)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Factories 49.43 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.31 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 99.83 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.72 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.96 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.05 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 6.43 ms (1)
+Jan 20 15:49:02 symfony [info] {sfWebResponse} Send content (88918 o)
+Jan 20 15:51:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:51:30 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 15:51:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:51:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:51:30 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:51:30 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:51:30 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:51:30 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:51:30 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:51:30 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:51:30 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:51:30 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:51:30 symfony [info] {main} Get slot "title"
+Jan 20 15:51:30 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 15:51:30 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 15:51:30 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 15:51:30 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 15:51:30 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 15:51:30 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 15:51:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 15:51:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Configuration 59.46 ms (14)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Factories 45.30 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Action "accueil/index" 164.44 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 127.03 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.85 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.73 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.80 ms (1)
+Jan 20 15:51:30 symfony [info] {sfWebResponse} Send content (91069 o)
+Jan 20 15:53:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:53:39 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 15:53:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:53:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:53:39 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:53:39 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:53:39 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:53:39 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:53:39 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:53:39 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:53:39 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:53:39 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:53:39 symfony [info] {main} Get slot "title"
+Jan 20 15:53:39 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 15:53:39 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 15:53:39 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 15:53:39 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 15:53:39 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 15:53:39 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 15:53:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 15:53:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Configuration 58.06 ms (14)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Factories 46.71 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Action "accueil/index" 61.14 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 149.12 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.03 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.98 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.65 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.92 ms (1)
+Jan 20 15:53:39 symfony [info] {sfWebResponse} Send content (95813 o)
+Jan 20 15:57:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:57:24 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 15:57:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:57:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:57:24 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:57:24 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:57:24 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:57:24 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:57:24 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:57:24 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:57:24 symfony [err] {InvalidArgumentException} Widget "Nom" does not exist.
+Jan 20 15:57:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 15:57:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 15:57:24 symfony [info] {sfWebDebugLogger} Configuration 54.65 ms (11)
+Jan 20 15:57:24 symfony [info] {sfWebDebugLogger} Factories 49.87 ms (1)
+Jan 20 15:57:24 symfony [info] {sfWebDebugLogger} Action "accueil/index" 60.59 ms (1)
+Jan 20 15:57:24 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 146.70 ms (1)
+Jan 20 15:58:40 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:58:40 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 15:58:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:58:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:58:40 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:58:40 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:58:40 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:58:40 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:58:40 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:58:40 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:58:40 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:58:40 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:58:40 symfony [info] {main} Get slot "title"
+Jan 20 15:58:40 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 15:58:40 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 15:58:40 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 15:58:40 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 15:58:40 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 15:58:40 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 15:58:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 15:58:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Configuration 41.48 ms (14)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Factories 31.30 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Action "accueil/index" 40.21 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 79.43 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.84 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.70 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.81 ms (1)
+Jan 20 15:58:40 symfony [info] {sfWebResponse} Send content (92937 o)
+Jan 20 15:59:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:59:14 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 15:59:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:59:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:59:14 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:59:14 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:59:14 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:59:14 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:59:14 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:59:14 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:59:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 15:59:35 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 15:59:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 15:59:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 15:59:35 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 15:59:35 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 15:59:35 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 15:59:35 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 15:59:35 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 15:59:35 symfony [info] {main} Set slot "sousMenu"
+Jan 20 15:59:35 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:59:35 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 15:59:35 symfony [info] {main} Get slot "title"
+Jan 20 15:59:35 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 15:59:35 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 15:59:35 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 15:59:35 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 15:59:35 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 15:59:35 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 15:59:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 15:59:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Configuration 47.25 ms (14)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Factories 42.03 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Action "accueil/index" 43.47 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 98.50 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.67 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.74 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 2.67 ms (1)
+Jan 20 15:59:35 symfony [info] {sfWebResponse} Send content (92937 o)
+Jan 20 16:00:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:00:11 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:00:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:00:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:00:11 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:00:11 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:00:11 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:00:11 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:00:11 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:00:11 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:00:11 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:00:11 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:00:11 symfony [info] {main} Get slot "title"
+Jan 20 16:00:11 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:00:11 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:00:11 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:00:11 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:00:11 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:00:11 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:00:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:00:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Configuration 42.03 ms (14)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Factories 37.62 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Action "accueil/index" 29.15 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 88.14 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.99 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.73 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.80 ms (1)
+Jan 20 16:00:11 symfony [info] {sfWebResponse} Send content (92937 o)
+Jan 20 16:01:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:01:41 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:01:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:01:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:01:41 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:01:41 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:01:41 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:01:41 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:01:41 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:01:41 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:01:41 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:01:41 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:01:41 symfony [info] {main} Get slot "title"
+Jan 20 16:01:41 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:01:41 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:01:41 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:01:41 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:01:41 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:01:41 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:01:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:01:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Configuration 42.49 ms (14)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Factories 45.46 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Action "accueil/index" 44.99 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 96.73 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.85 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.71 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.65 ms (1)
+Jan 20 16:01:41 symfony [info] {sfWebResponse} Send content (92980 o)
+Jan 20 16:02:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:02:37 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:02:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:02:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:02:37 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:02:37 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:02:37 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:02:37 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:02:37 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:02:37 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:02:37 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:02:37 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:02:37 symfony [info] {main} Get slot "title"
+Jan 20 16:02:37 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:02:37 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:02:37 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:02:37 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:02:37 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:02:37 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:02:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:02:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Configuration 46.22 ms (14)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Factories 30.49 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Action "accueil/index" 39.52 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 88.38 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.74 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.86 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.90 ms (1)
+Jan 20 16:02:37 symfony [info] {sfWebResponse} Send content (93120 o)
+Jan 20 16:02:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:02:51 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:02:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:02:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:02:51 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:02:51 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:02:51 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:02:51 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:02:51 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:02:51 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:02:51 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:02:51 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:02:51 symfony [info] {main} Get slot "title"
+Jan 20 16:02:51 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:02:51 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:02:51 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:02:51 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:02:51 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:02:51 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:02:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:02:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Configuration 40.44 ms (14)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Factories 42.76 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Action "accueil/index" 41.42 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 85.67 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.81 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.04 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.78 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 1.26 ms (1)
+Jan 20 16:02:51 symfony [info] {sfWebResponse} Send content (93139 o)
+Jan 20 16:03:17 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:03:17 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:03:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:03:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:03:17 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:03:17 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:03:17 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:03:17 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:03:17 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:03:17 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:03:17 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:03:17 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:03:17 symfony [info] {main} Get slot "title"
+Jan 20 16:03:17 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:03:17 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:03:17 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:03:17 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:03:17 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:03:17 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:03:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:03:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Configuration 56.09 ms (14)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Factories 29.63 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Action "accueil/index" 27.59 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 91.98 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.73 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 2.05 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.81 ms (1)
+Jan 20 16:03:17 symfony [info] {sfWebResponse} Send content (96046 o)
+Jan 20 16:03:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:03:20 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:03:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:03:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:03:20 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:03:20 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:03:20 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:03:20 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:03:20 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:03:20 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:03:20 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:03:20 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:03:20 symfony [info] {main} Get slot "title"
+Jan 20 16:03:20 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:03:20 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:03:20 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:03:20 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:03:20 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:03:20 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:03:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:03:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Configuration 42.30 ms (14)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Factories 31.62 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Action "accueil/index" 25.88 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 82.59 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.80 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.78 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.76 ms (1)
+Jan 20 16:03:20 symfony [info] {sfWebResponse} Send content (97337 o)
+Jan 20 16:06:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:06:47 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:06:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:06:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:06:47 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:06:47 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:06:47 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:06:47 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:06:47 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:06:47 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:06:47 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:06:47 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:06:47 symfony [info] {main} Get slot "title"
+Jan 20 16:06:47 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:06:47 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:06:47 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:06:47 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:06:47 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:06:47 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:06:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:06:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Configuration 48.73 ms (14)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Factories 42.44 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Action "accueil/index" 44.57 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 107.73 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.03 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.73 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.76 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.71 ms (1)
+Jan 20 16:06:47 symfony [info] {sfWebResponse} Send content (97370 o)
+Jan 20 16:06:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:06:52 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:06:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:06:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:06:52 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:06:52 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:06:52 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:06:52 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:06:52 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:06:52 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:06:52 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:06:52 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:06:52 symfony [info] {main} Get slot "title"
+Jan 20 16:06:52 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:06:52 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:06:52 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:06:52 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:06:52 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:06:52 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:06:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:06:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Configuration 39.36 ms (14)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Factories 26.00 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Action "accueil/index" 27.61 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 79.25 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.74 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.77 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 1.01 ms (1)
+Jan 20 16:06:52 symfony [info] {sfWebResponse} Send content (97628 o)
+Jan 20 16:07:38 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:07:38 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:07:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:07:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:07:38 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:07:38 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:07:38 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:07:38 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:07:38 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:07:38 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:07:38 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:07:38 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:07:38 symfony [info] {main} Get slot "title"
+Jan 20 16:07:38 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:07:38 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:07:38 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:07:38 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:07:38 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:07:38 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:07:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:07:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Configuration 40.85 ms (14)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Factories 47.93 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Action "accueil/index" 43.06 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 92.45 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.07 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 1.00 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.71 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.73 ms (1)
+Jan 20 16:07:38 symfony [info] {sfWebResponse} Send content (97675 o)
+Jan 20 16:07:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:07:41 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:07:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:07:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:07:41 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:07:41 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:07:41 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:07:41 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:07:41 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:07:41 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:07:41 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:07:41 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:07:41 symfony [info] {main} Get slot "title"
+Jan 20 16:07:41 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:07:41 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:07:41 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:07:41 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:07:41 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:07:41 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:07:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:07:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Configuration 45.05 ms (14)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Factories 39.86 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Action "accueil/index" 47.00 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 162.73 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.71 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.93 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.69 ms (1)
+Jan 20 16:07:41 symfony [info] {sfWebResponse} Send content (97029 o)
+Jan 20 16:07:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:07:51 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:07:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:07:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:07:51 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:07:51 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:07:51 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:07:51 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:07:51 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:07:51 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:07:51 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:07:51 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:07:51 symfony [info] {main} Get slot "title"
+Jan 20 16:07:51 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:07:51 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:07:51 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:07:51 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:07:51 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:07:51 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:07:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:07:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Configuration 39.89 ms (14)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Factories 41.04 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Action "accueil/index" 47.18 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 81.90 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.68 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.64 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.77 ms (1)
+Jan 20 16:07:51 symfony [info] {sfWebResponse} Send content (96849 o)
+Jan 20 16:08:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:08:39 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:08:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:08:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:08:39 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:08:39 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:08:39 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:08:39 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:08:39 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:08:39 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:08:39 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:08:39 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:08:39 symfony [info] {main} Get slot "title"
+Jan 20 16:08:39 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:08:39 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:08:39 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:08:39 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:08:39 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:08:39 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:08:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:08:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Configuration 54.16 ms (14)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Factories 93.72 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Action "accueil/index" 39.30 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 102.87 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.75 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.72 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 1.91 ms (1)
+Jan 20 16:08:39 symfony [info] {sfWebResponse} Send content (97040 o)
+Jan 20 16:09:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:09:34 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:09:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:09:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:09:34 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:09:34 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:09:34 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:09:34 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:09:34 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:09:34 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:09:34 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:09:34 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:09:34 symfony [info] {main} Get slot "title"
+Jan 20 16:09:34 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:09:34 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:09:34 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:09:34 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:09:34 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:09:34 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:09:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:09:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Configuration 39.90 ms (14)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Factories 29.06 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Action "accueil/index" 29.37 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 81.57 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.69 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.02 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.64 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.77 ms (1)
+Jan 20 16:09:34 symfony [info] {sfWebResponse} Send content (96860 o)
+Jan 20 16:10:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:10:10 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:10:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:10:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:10:10 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:10:10 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:10:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:10:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:10:10 symfony [info] {sfWebDebugLogger} Configuration 38.03 ms (10)
+Jan 20 16:10:10 symfony [info] {sfWebDebugLogger} Factories 29.66 ms (1)
+Jan 20 16:10:10 symfony [info] {sfWebDebugLogger} Action "accueil/index" 125.89 ms (1)
+Jan 20 16:11:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:11:05 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:11:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:11:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:11:05 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:11:05 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:11:05 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:11:05 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:11:05 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:11:05 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:11:05 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:11:05 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:11:05 symfony [info] {main} Get slot "title"
+Jan 20 16:11:05 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:11:05 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:11:05 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:11:05 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:11:05 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:11:05 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:11:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:11:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Configuration 144.34 ms (13)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Factories 80.21 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Action "accueil/index" 32.23 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 76.43 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.60 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.73 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.71 ms (1)
+Jan 20 16:11:05 symfony [info] {sfWebResponse} Send content (96860 o)
+Jan 20 16:11:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:11:13 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:11:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:11:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:11:13 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:11:13 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:11:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:11:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:11:13 symfony [info] {sfWebDebugLogger} Configuration 35.20 ms (10)
+Jan 20 16:11:13 symfony [info] {sfWebDebugLogger} Factories 25.34 ms (1)
+Jan 20 16:11:13 symfony [info] {sfWebDebugLogger} Action "accueil/index" 101.90 ms (1)
+Jan 20 16:16:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:16:18 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:16:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:16:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:16:18 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:16:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:16:35 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:16:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:16:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:16:35 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:16:35 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:16:35 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:16:35 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:16:35 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:16:35 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:16:35 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:16:35 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:16:35 symfony [info] {main} Get slot "title"
+Jan 20 16:16:35 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:16:35 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:16:35 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:16:35 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:16:35 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:16:35 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:16:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:16:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Configuration 48.81 ms (14)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Factories 68.24 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Action "accueil/index" 39.82 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 98.96 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.66 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.88 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.69 ms (1)
+Jan 20 16:16:35 symfony [info] {sfWebResponse} Send content (95621 o)
+Jan 20 16:16:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:16:44 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:16:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:16:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:16:44 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:16:44 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:16:44 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:16:44 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:16:44 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:16:44 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:16:44 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:16:44 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:16:44 symfony [info] {main} Get slot "title"
+Jan 20 16:16:44 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:16:44 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:16:44 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:16:44 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:16:44 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:16:44 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:16:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:16:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Configuration 43.10 ms (14)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Factories 25.86 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Action "accueil/index" 37.47 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 88.46 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.93 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.86 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 1.03 ms (1)
+Jan 20 16:16:44 symfony [info] {sfWebResponse} Send content (96829 o)
+Jan 20 16:18:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:18:36 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:18:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:18:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:18:36 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:18:36 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:18:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:18:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:18:36 symfony [info] {sfWebDebugLogger} Configuration 43.51 ms (10)
+Jan 20 16:18:36 symfony [info] {sfWebDebugLogger} Factories 113.22 ms (1)
+Jan 20 16:18:36 symfony [info] {sfWebDebugLogger} Action "accueil/index" 144.23 ms (1)
+Jan 20 16:23:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:23:20 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:23:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:23:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:23:20 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:23:20 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:23:20 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:23:20 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:23:20 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:23:20 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:23:21 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:23:21 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:23:21 symfony [info] {main} Get slot "title"
+Jan 20 16:23:21 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:23:21 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:23:21 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:23:21 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:23:21 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:23:21 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:23:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:23:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Configuration 69.03 ms (14)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Factories 67.13 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Action "accueil/index" 52.76 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 129.94 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.81 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 1.09 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 1.02 ms (1)
+Jan 20 16:23:21 symfony [info] {sfWebResponse} Send content (95622 o)
+Jan 20 16:27:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:27:05 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:27:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:27:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:27:05 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:27:05 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:27:05 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:27:05 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:27:05 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:27:05 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:27:05 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:27:05 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:27:05 symfony [info] {main} Get slot "title"
+Jan 20 16:27:05 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:27:05 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:27:05 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:27:05 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:27:05 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:27:05 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:27:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:27:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Configuration 44.17 ms (14)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Factories 34.92 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Action "accueil/index" 40.84 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 102.09 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.73 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.68 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.75 ms (1)
+Jan 20 16:27:05 symfony [info] {sfWebResponse} Send content (96556 o)
+Jan 20 16:27:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:27:39 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:27:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:27:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:27:39 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:27:39 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:27:39 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:27:39 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:27:39 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:27:40 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:27:40 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:27:40 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:27:40 symfony [info] {main} Get slot "title"
+Jan 20 16:27:40 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:27:40 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:27:40 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:27:40 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:27:40 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:27:40 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:27:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:27:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Configuration 54.00 ms (14)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Factories 123.22 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Action "accueil/index" 47.29 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 109.13 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.81 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.66 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 1.10 ms (1)
+Jan 20 16:27:40 symfony [info] {sfWebResponse} Send content (96557 o)
+Jan 20 16:27:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:27:45 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:27:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:27:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:27:45 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:27:45 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:27:45 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:27:45 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:27:45 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:27:45 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:27:45 symfony [info] {sfPHPView} Decorate content with "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:27:45 symfony [info] {sfPHPView} Render "/home/simeon/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:27:45 symfony [info] {main} Get slot "title"
+Jan 20 16:27:45 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:27:45 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:27:45 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:27:45 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:27:45 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:27:45 symfony [info] {sfPartialView} Render "/home/simeon/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:27:45 symfony [warning] {sfWebDebugLogger}  Warning at /home/simeon/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:30))
+Jan 20 16:27:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:27:45 symfony [warning] {sfWebDebugLogger}  Warning at /home/simeon/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /home/simeon/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:30))
+Jan 20 16:27:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Configuration 44.36 ms (14)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Factories 35.06 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Action "accueil/index" 102.14 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 90.39 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.02 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.90 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.03 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.70 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.68 ms (1)
+Jan 20 16:27:45 symfony [info] {sfWebResponse} Send content (96280 o)

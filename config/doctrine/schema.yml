@@ -1,0 +1,501 @@
+Adresse:
+  connection: doctrine
+  tableName: adresse
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    ville_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    personne_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    groupe_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    rue:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    rue_cptl:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    cp:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ville:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Ville:
+      local: ville_id
+      foreign: id
+      type: one
+    Personne:
+      local: personne_id
+      foreign: id
+      type: one
+    Groupe:
+      local: groupe_id
+      foreign: id
+      type: one
+ContactPro:
+  connection: doctrine
+  tableName: contactPro
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    personne_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    groupe_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fonction_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Personne:
+      local: personne_id
+      foreign: id
+      type: one
+    Groupe:
+      local: groupe_id
+      foreign: id
+      type: one
+    Fonction:
+      local: fonction_id
+      foreign: id
+      type: one
+Departement:
+  connection: doctrine
+  tableName: departement
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    region_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nom:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Region:
+      local: region_id
+      foreign: id
+      type: one
+    Ville:
+      local: region_id
+      foreign: departement_id
+      type: many
+Fax:
+  connection: doctrine
+  tableName: fax
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    personne_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    groupe_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numero:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Personne:
+      local: personne_id
+      foreign: id
+      type: one
+    Groupe:
+      local: groupe_id
+      foreign: id
+      type: one
+Fonction:
+  connection: doctrine
+  tableName: fonction
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    intitule:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ContactPro:
+      local: id
+      foreign: fonction_id
+      type: many
+Groupe:
+  connection: doctrine
+  tableName: groupe
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    parent_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    intitule:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Groupe:
+      local: id
+      foreign: parent_id
+      type: many
+    Type:
+      local: type_id
+      foreign: id
+      type: one
+    Adresse:
+      local: id
+      foreign: groupe_id
+      type: many
+    ContactPro:
+      local: id
+      foreign: groupe_id
+      type: many
+    Fax:
+      local: id
+      foreign: groupe_id
+      type: many
+    Mail:
+      local: id
+      foreign: groupe_id
+      type: many
+    Telephone:
+      local: id
+      foreign: groupe_id
+      type: many
+Mail:
+  connection: doctrine
+  tableName: mail
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    personne_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    groupe_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Personne:
+      local: personne_id
+      foreign: id
+      type: one
+    Groupe:
+      local: groupe_id
+      foreign: id
+      type: one
+Personne:
+  connection: doctrine
+  tableName: personne
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    prenom:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    civ:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    date_naissance:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    photo:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Adresse:
+      local: id
+      foreign: personne_id
+      type: many
+    ContactPro:
+      local: id
+      foreign: personne_id
+      type: many
+    Fax:
+      local: id
+      foreign: personne_id
+      type: many
+    Mail:
+      local: id
+      foreign: personne_id
+      type: many
+    Telephone:
+      local: id
+      foreign: personne_id
+      type: many
+Region:
+  connection: doctrine
+  tableName: region
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Departement:
+      local: id
+      foreign: region_id
+      type: many
+Telephone:
+  connection: doctrine
+  tableName: telephone
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    personne_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    groupe_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numero:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Personne:
+      local: personne_id
+      foreign: id
+      type: one
+    Groupe:
+      local: groupe_id
+      foreign: id
+      type: one
+Type:
+  connection: doctrine
+  tableName: type
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelle:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Groupe:
+      local: id
+      foreign: type_id
+      type: many
+Ville:
+  connection: doctrine
+  tableName: ville
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    departement_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nom:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Departement:
+      local: departement_id
+      foreign: region_id
+      type: one
+    Adresse:
+      local: id
+      foreign: ville_id
+      type: many

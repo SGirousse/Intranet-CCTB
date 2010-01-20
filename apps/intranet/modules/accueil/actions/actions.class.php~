@@ -17,10 +17,20 @@ class accueilActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {   
-    $this->getUser()->setFlash('error', 'Ceci est la zone d\'affichage des messages flash "notice" et "error"');
-    //$this->menu = $menu->getMenuPrincipal(); 
-    //$this->getUser()->setCulture('fr');
-    //$this->forward('default', 'module');
+    $this->getUser()->setFlash('error', 'Ceci est la zone d\'affichage des messages flash "notice" et "error"'); 
+
+	$user = new personneForm();
+	$this->form = $user;
+
+	if ($request->isMethod('post'))
+	{
+		$this->form->bind($request->getParameter('personne'));
+		if ($this->form->isValid())
+		{
+			echo 'ok';			
+//$this->form->save();
+		}
+	}
   }
 }
 

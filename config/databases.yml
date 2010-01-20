@@ -5,6 +5,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=intranet-cctb
+      dsn:      mysql:host=localhost;dbname=intranet
       username: root
-      password:
+      password: f1chtr33tf0utr3
