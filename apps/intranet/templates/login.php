@@ -1,9 +1,8 @@
 <?php 
 /*
-	Template spécifique à l'affichage de la boite de login
-	Sébastien MARCELLIN
-*/
-use_helper('Javascript') ;
+ *	Template spécifique à l'affichage de la boite de login
+ *	Sébastien MARCELLIN
+ */
 use_javascript('/js/prototype.js');
 use_javascript('/js/effects.js');
 ?>

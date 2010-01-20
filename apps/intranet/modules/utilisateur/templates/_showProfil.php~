@@ -1,0 +1,53 @@
+<div id="boite_profil" class="boite_profil">
+	<table id="boite_arrondie" width="350" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	  <td width="10">
+	    <img src="/images/profil/chg.png" border="0" width="21" height="20" />
+	  </td>
+
+	  <td width="330">
+	    <img src="/images/profil/cmh.png" border="0" width="100%" height="20" />
+	  </td>
+	  <td width="10">
+	    <img src="/images/profil/chd.png" border="0" width="21" height="20" />
+	  </td>
+	</tr>
+	<tr>
+	  <td style="background-image:url('/images/profil/cmg.png')"></td>
+	  <td style="background-color:#FFF;">
+	    <div style="float:left" class="photo_utilisateur">
+	      <?php echo 'avatar'; ?>
+	    </div>
+	    <div style="padding-left:2px;">
+	      <a href="<?php echo '' ?>"><img src="/images/icones/door_in.png" style="float:right;" title="<?php __('Logout'); ?>" /></a> <?php echo 'Votre nom'; ?><br />
+	      <div style="color:#c0c0c0" onClick="if(document.getElementById('profil_plus').style.display == 'none'){new Effect.BlindDown('profil_plus');return false;}else{new Effect.BlindUp('profil_plus');return false;}">
+		<?php echo 'poste'; ?>
+		<div>
+		  <div style="color:#c0c0c0">
+		    <?php echo 'email'; ?>
+		  </div>
+		</div>
+	      </div>
+	      <div id="profil_plus" style="color:#c0c0c0;display:none;">
+		   <div><img src="/images/icones/telephone.png" /><?php echo __('Numéro de poste interne : ').'phoneInterne'; ?></div>
+		   <div><?php echo __('Numéro de poste externe : ').'phoneExterne'; ?></div>
+	      </div>
+	    </div>
+	  </td>
+	  <td style="background-image:url('/images/profil/cmd.png')"></td>
+	</tr>
+
+	<tr>
+	  <td width="10">
+	    <img src="/images/profil/cbg.png" border="0" width="21" height="20" />
+	  </td>
+	  <td width="280">
+	    <img src="/images/profil/cmb.png" border="0" width="100%" height="20" />
+	  </td>
+	  <td width="10">
+	    <img src="/images/profil/cbd.png" border="0" width="21" height="20" />
+
+	  </td>
+	</tr>
+	</table>
+</div>

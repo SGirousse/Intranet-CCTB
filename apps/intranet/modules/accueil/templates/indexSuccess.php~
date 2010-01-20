@@ -1,4 +1,16 @@
+<?php slot('sousMenu') ?>
+  <!-- Sous menu pour la page d'accueil-->
+  <h1>User details</h1>
+  <p>name: </p>
+  <p>email: </p>
+<?php end_slot() ?>
+
 <?php
-echo __('Bonsoir');
-echo $toto;
+use_helper('Date');
+echo __('Hello world');
+echo '<br>';
+echo distance_of_time_in_words('2000-01-01', '2000-01-10');
+echo '<br>';
+echo format_date('2009-11-25');
+echo '<br>';
 ?>

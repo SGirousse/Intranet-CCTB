@@ -1,0 +1,32 @@
+<?php
+/**
+ * intranetMenu.
+ *
+ * @package    intranet-cctb
+ * @subpackage intranetMenu
+ * @author     Sébastien MARCELLIN
+ * @version    SVN: $Id: intranetMenu.class.php 23810 2009-11-12 11:07:44Z sebastien.marcellin $
+ */
+ 
+class intranetActions extends sfActions{
+	/*
+	 *	Affiche le menu principal en fonction de l'utilisateur connecté
+	 */
+	public function executeMenuPrincipal()
+	{
+
+	}
+	
+	/*
+	 *	Affiche le sous menu en fonction de l'utilisateur connecté et du module courant
+	 */
+	public function executeSousMenu()
+	{
+		/* 	Nous récupérons le nom du module et de l'action courant
+		 * 	!! Attention, ne pas utiliser moduleName ou actionName comme nom de variable !!
+		 */
+		$moduleNom = $this->getContext()->getModuleName();
+		$actionNom = $this->getContext()->getActionName();
+	}
+}
+?>

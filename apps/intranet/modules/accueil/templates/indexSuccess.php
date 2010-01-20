@@ -1,3 +1,18 @@
+<?php slot('sousMenu') ?>
+  <!-- Sous menu pour la page d'accueil-->
+  <ul>
+  	<li>Action 1</li>
+  	<li>Action 2</li>
+  	<li>Action 3</li>
+  </ul>
+<?php end_slot() ?>
+
 <?php
-echo __('helloworld');
+use_helper('Date');
+echo __('Hello world');
+echo '<br>';
+echo distance_of_time_in_words('2000-01-01', '2000-01-10');
+echo '<br>';
+echo format_date('2009-11-25');
+echo '<br>';
 ?>

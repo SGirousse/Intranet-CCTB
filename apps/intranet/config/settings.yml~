@@ -26,7 +26,7 @@ all:
   .settings:
     # Les réglages linguisitiques
     charset: utf-8
-    default_culture: EN
+    default_culture: en_GB
     
     # Activation du support de l'internationnalisation
     i18n: true
@@ -43,3 +43,8 @@ all:
 
     # Enable the database manager
     use_database:           true
+    
+  # Renvoie vers le module d'authentification
+  .actions:
+    login_module: utilisateur
+    login_action: login

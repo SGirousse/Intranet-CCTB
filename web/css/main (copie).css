@@ -1,0 +1,473 @@
+/*-----------------------------------------------------------------------------------------------
+  Feuille de style principale
+  Sébastien MARCELLIN
+
+-----------------------------------------------------------------------------------------------*/
+/*
+	Corps du site
+*/
+body{
+	background:#baf136;
+	background-image:url(/images/main/fond.png);
+	background-repeat:repeat-x;
+	padding:0;
+	margin:0;
+}
+/*
+	Paramétrage de la font pour l'ensemble de l'application
+*/
+*{
+	font-size:11px;
+	font-family: Verdana, "Lucida Grande", Lucida, Tahoma, "Trebuchet MS", Arial, Geneva, Helvetica, sans-serif;
+	border:none;
+}
+
+/*
+	Le header (contient le menu principal, la boite utilisateur)
+*/
+#header{
+	z-index:999;
+	position:absolute;	/* Pour pouvoir attribuer un z-index, nous devons fixer le menu */
+	padding:0;
+	margin:0;
+	width:100%;
+}
+
+/*
+	Paramétres pour le menu du haut
+*/
+#menuPrincipal {
+	position:absolute;	/* Pour pouvoir attribuer un z-index, nous devons fixer le menu */
+	z-index:999;
+	font-weight:bold;
+	color:#FFF;
+}
+
+#menuPrincipal li{
+	list-style-type: none;
+	background-image: url(/images/icones/bullet_orange.png);
+	background-repeat: no-repeat;
+	background-position: 0% 20%;
+	padding-left: 15px;
+	display: list-item;
+	float: left;
+	margin-right: 20px;	/* Pour espacer les items entre eux */
+}
+
+/*
+	Réglages afin de mettre le pied de page en bas sur les petites pages, et en fin de page pour les longues pages
+*/
+#container{
+	padding: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+
+* html #contenu{
+	height: 100%;
+}
+/*
+	Zone d'information située au dessus du contenu principal et en dessous de la zone de recherche google
+*/
+#zone-informations{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	padding-top:60px;
+}
+
+.flash_notice{
+	background-color:#FDB741;
+	color:#FFF;
+	padding:3px;
+	font-size:12px;
+	font-weight:bold;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+/*
+	Pied de page
+*/
+#footer{
+	background-color:#5992c6;
+	border-top:#FFF 4px solid;
+	color:#FFF;
+	
+	position: absolute;  /* Nécessaire pour Safari */
+
+	width:100%;
+	height:50px;
+	text-align:left;
+}
+#footer img{
+	margin-left:20px;
+}
+
+/* Logo Principal*/
+
+#logo{
+	position: absolute;
+	margin-top: 33px;
+	margin-left: 5px;
+	z-index:-999;
+}
+
+/*
+	Liens
+*/
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+a .visited{
+	color:#FFF;
+}
+
+a .hover{
+	color:#FFF;
+}
+/*
+	Contenu du site
+*/
+#contenu{
+	width:83%;
+	margin:0;
+	margin-top:85px;
+	margin-left:170px;
+	min-height:300px;
+	background-color:#FFF;
+	padding:10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	z-index:30;
+}
+
+/*
+	Menu de gauche
+*/
+#menu_gauche{
+	width:170px;
+	margin:0;
+	float:left;
+	height:100%;
+	margin-top:120px;
+	z-index:0;
+}
+
+/*
+	Base communes à chaque elements
+*/
+#menu_gauche li{
+	list-style-type: none;
+	height:18px;
+	padding-top:4px;
+	padding-left:10px;
+	margin-left:10px;
+	margin-bottom:10px;
+	-moz-border-radius: 4px 0px 0px 4px;
+	-webkit-border-radius: 4px 0px 0px 4px;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+}
+#menu_gauche a{
+	text-decoration:none;
+}
+
+#menu_gauche img{
+	position:absolute;
+}
+#menu_gauche span{
+	margin-left:20px;
+}
+
+
+/*
+	Elements actifs du menu de gauche
+*/
+#menu_gauche .actif {
+	color:#5992c6;
+	background-color:#FFF;
+}
+/*
+	Elements inactifs
+*/
+#menu_gauche .inactif{
+	color:#FFF;
+	background-color:#5992c6;
+}
+
+/*
+	Elements actifs du menu du haut
+*/
+.actif {
+	color:#FFF;
+	text-decoration:none;
+}
+/*
+	Elements inactifs
+*/
+.inactif{
+	color:#FFF;
+	text-decoration:underline;
+}
+
+/*
+	Les boites de titre (rectangles arrondis)
+*/
+.boite_titre{
+	/*background-color:#ffe0ab;
+	*/
+	background-color:#5992c6;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+
+/*
+	Boite de connexion utilisateur (sfGuard, login)
+*/
+/* Formulaire de login */
+#div_login{
+	position:absolute; 
+  	left: 50%;  
+ 	top: 50%; 
+ 	margin-top: -135px; /* moitié de la hauteur */ 
+  	margin-left: -265px; /* moitié de la largeur */ 
+	/*margin-top:100px;
+	margin-left: auto;
+     	margin-right: auto;
+     	*/
+     	width:530px;
+     	height:270px;
+     	background:url('/images/login/boitelongue.png');
+}
+#table_login{
+	padding:0;
+	margin-left:170px;
+	margin-top:70px;
+	font-size:12px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
+}
+/*
+	Boite de profil en haut à droite du layout
+*/
+.boite_profil{
+	float:right;
+	width:350px;
+	color:black;
+	margin-top:-100px;
+	margin-right:-18px;
+}
+.photo_utilisateur img{
+	height:40px;
+	width:40px;
+	border:#c0c0c0 1px solid;
+	margin-right:10px;
+}
+
+/*
+	Boite de rechercher google search
+*/
+.googleSearch{
+	position:relative;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:50px;
+	padding-top:30px;
+}
+.googleSearch .googleSubmit{
+	border:none;
+}
+
+.googleSearch .googleTr{
+	border:none;
+}
+
+/*
+	Boite pour les titres
+*/
+.accueil_titre{
+	/*background-color:#ffe0ab;
+	*/
+	background-color:#5992c6;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+
+/*
+	Les labels de couleurs (titre de menu en arrondi)
+*/
+.label_vert{
+	background-color:#34A65A;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_vert img {
+	position:absolute;margin-left:-30px
+}
+.label_bleu{
+	background-color:#5992c6;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	height:20px;
+}
+.label_bleu img {
+	position:absolute;margin-left:-30px
+}
+.label_bordeau{
+	background-color:#823559;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_bordeau img {
+	position:absolute;margin-left:-30px
+}
+.label_rose{
+	background-color:#D69FE3;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_rose img {
+	position:absolute;margin-left:-30px
+}
+.label_orange{
+	background-color:#F4B332;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_orange img {
+	position:absolute;margin-left:-30px
+}
+.label_jaune{
+	background-color:#E9E93B;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#000;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_jaune img {
+	position:absolute;margin-left:-30px
+}
+
+/*
+	Class etiquette jaune
+*/
+.etiquette {
+	border:#D4A301 1px solid;
+	color:#A88100;
+	background-color:#F9E7AC;
+}
+
+/*
+	Effet bulle
+*/
+div.bulle {
+    width: auto;
+    font-size: 0.75em;
+    margin-bottom: 24px;
+}
+
+div.bulle blockquote {
+    margin: 0px;
+    margin-top:5px;
+    padding: 5px;
+    border: 1px solid #c9c2c1;
+    background-color: #fff;
+    color:black;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+div.bulle blockquote p {
+    margin: 10px;
+    padding: 0px;
+}
+
+div.bulle blockquote #pointe {
+    position: absolute;
+    margin-top: 10px;
+    margin-left:20px;
+    top: 6px;
+    font-style: normal;
+}
+
+/*
+	Infobulle (et non pas juste un design)
+*/
+a.info{
+    position:relative; /*this is the key*/
+    z-index:24;
+    color:#000;
+    text-decoration:none}
+
+a.info:hover{z-index:25;}
+
+a.info span{display: none}
+
+a.info:hover span{ /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top:0em; left:9em; width:24em;
+    border:#D4A301 1px solid;
+    color:#A88100;
+    background-color:#F9E7AC;
+    text-align: left}
+/**********************************************************************************************************************************/
+

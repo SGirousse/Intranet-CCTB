@@ -1,4 +1,5 @@
 /*-----------------------------------------------------------------------------------------------
+  
   Feuille de style principale
   Sébastien MARCELLIN
 
@@ -13,70 +14,148 @@ body{
 	padding:0;
 	margin:0;
 }
-
+/*
+	Paramétrage de la font pour l'ensemble de l'application
+*/
 *{
 	font-size:11px;
 	font-family: Verdana, "Lucida Grande", Lucida, Tahoma, "Trebuchet MS", Arial, Geneva, Helvetica, sans-serif;
+	border:none;
+}
+/*
+	Liens
+*/
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+a .visited{
+	color:#FFF;
+}
+
+a .hover{
+	color:#FFF;
+}
+/*
+	Le header (contient le menu principal, la boite utilisateur)
+*/
+#header{
+	padding:0px;
+	margin:0px;
+	width:100%;
 }
 
 /*
-	Menu de selection des modules
+	Paramétres pour le menu du haut
 */
-.menu_module{
+#menuPrincipal ul{
+	margin:0px;
+	padding:5px;
 	font-weight:bold;
 	color:#FFF;
-	padding:0;
-	margin:0;
-	width:100%;
-	height: 20px;
-	margin-left:3px;
 }
 
-/*
-	Paramétres pour le menu du haut, uniquement la liste des éléments
-*/
-#menu {
-	z-index:999;
-	position:absolute;	/* Pour pouvoir attribuer un z-index, nous devons fixer le menu */
-	margin-left:290px;
-}
-
-
-/* 
-	Elements du menu principal 
-*/
-.menu_module li{
+#menuPrincipal li{
 	list-style-type: none;
 	background-image: url(/images/icones/bullet_orange.png);
 	background-repeat: no-repeat;
-	background-position: 0% 65%;
+	background-position: 0% 20%;
 	padding-left: 15px;
 	display: list-item;
 	float: left;
-	margin-left:10px;  		/* Pour espacer les items entre eux */
-	margin-right:20px;
+	margin-right: 20px;	/* Pour espacer les items entre eux */
 }
 
-
 /*
-	Par défaut, nous ne voulons pas de bordure autour de nos images
+	Boite de rechercher google search
 */
-img {
-	border:none;
+#googleSearch{
+	position:relative;
+	width:500px;
+	margin-left:220px;
+	margin-right:auto;
+	padding-left:0px;
+	padding-top:20px;
+}
+#googleSearch img{
+	margin-bottom:-10px;	/* Pour centrer verticalement l'image par rapport à la boite de saisie */
+}
+
+#googleSearch #googleInput{
+	border:#34A65A 1px solid;
+}
+
+/* 
+	Logo de l'application 
+*/
+#logo{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 35px;
 }
 
 /*
 	Réglages afin de mettre le pied de page en bas sur les petites pages, et en fin de page pour les longues pages
 */
 #container{
-	padding: 10px;
 	margin-left:auto;
 	margin-right:auto;
-	width:90%;
+	width:1220px;
 }
 
-* html #contenu{
-	height: 100%;
+/*
+	Zone d'information située au dessus du contenu principal et en dessous de la zone de recherche google
+	Elle permet d'afficher des flash à destination de l'utilisateur
+*/
+#zone-informations{
+	position:relative;
+	width:100%;
+	text-align:left;
+	margin-top:15px;
+	margin-left:220px;
+}
+
+.flash_notice{
+	background-color:#FDB741;
+	background-image:url('/images/icones/information.png');
+	background-repeat:no-repeat;
+	background-position:3px 50%;
+	color:#FFF;
+	padding:3px;
+	padding-left:30px;
+	font-size:12px;
+	font-weight:bold;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.flash_error{
+	background-color:#D00B01;
+	background-image:url('/images/icones/error.png');
+	background-repeat:no-repeat;
+	background-position:3px 50%;
+	color:#FFF;
+	padding:3px;
+	padding-left:30px;
+	font-size:12px;
+	font-weight:bold;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+/*
+	Contenu du site
+*/
+#contenu{
+	width:1000px;		/* Ou 83% pour une mise en page plus fluide */
+	margin-top:15px;
+	margin-left:220px;
+	min-height:400px;
+	background-color:#FFF;
+	padding:10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	z-index:30;
 }
 
 /*
@@ -95,45 +174,6 @@ img {
 }
 #footer img{
 	margin-left:20px;
-}
-
-/* Logo Principal*/
-
-#logo{
-	position: absolute;
-	margin-top: 33px;
-	margin-left: 5px;
-	z-index:-999;
-}
-
-/*
-	Liens
-*/
-a {
-	color:#FFF;
-	text-decoration:none;
-}
-a .visited{
-	color:#FFF;
-}
-
-a .hover{
-	color:#FFF;
-}
-/*
-	Contenu du site
-*/
-#contenu{
-	width:83%;
-	margin:0;
-	margin-top:85px;
-	margin-left:170px;
-	min-height:300px;
-	background-color:#FFF;
-	padding:10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	z-index:30;
 }
 
 /*
@@ -253,10 +293,11 @@ a .hover{
 	Boite de profil en haut à droite du layout
 */
 .boite_profil{
-	margin-top:20px;
 	float:right;
 	width:350px;
 	color:black;
+	margin-top:-100px;
+	margin-right:-18px;
 }
 .photo_utilisateur img{
 	height:40px;
@@ -265,24 +306,6 @@ a .hover{
 	margin-right:10px;
 }
 
-/*
-	Boite de rechercher google search
-*/
-.googleSearch{
-	position:relative;
-	width:500px;
-	margin-left:auto;
-	margin-right:auto;
-	padding-left:50px;
-	padding-top:30px;
-}
-.googleSearch .googleSubmit{
-	border:none;
-}
-
-.googleSearch .googleTr{
-	border:none;
-}
 
 /*
 	Boite pour les titres
@@ -300,109 +323,6 @@ a .hover{
 	font-size:12px;
 	font-weight:bold;
 	text-align:center;
-}
-
-/*
-	Meteo
-*/
-#meteo{
-	position:absolute;
-	margin-top:-1px;
-}
-
-/*
-	Les labels de couleurs (titre de menu en arrondi)
-*/
-.label_vert{
-	background-color:#34A65A;
-	padding:5px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	/*color:#5992c6;
-	*/
-	color:#fff;
-	font-size:12px;
-	font-weight:bold;
-	text-align:center;
-}
-.label_vert img {
-	position:absolute;margin-left:-30px
-}
-.label_bleu{
-	background-color:#5992c6;
-	padding:5px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	/*color:#5992c6;
-	*/
-	color:#fff;
-	font-size:12px;
-	font-weight:bold;
-	text-align:center;
-	height:20px;
-}
-.label_bleu img {
-	position:absolute;margin-left:-30px
-}
-.label_bordeau{
-	background-color:#823559;
-	padding:5px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	/*color:#5992c6;
-	*/
-	color:#fff;
-	font-size:12px;
-	font-weight:bold;
-	text-align:center;
-}
-.label_bordeau img {
-	position:absolute;margin-left:-30px
-}
-.label_rose{
-	background-color:#D69FE3;
-	padding:5px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	/*color:#5992c6;
-	*/
-	color:#fff;
-	font-size:12px;
-	font-weight:bold;
-	text-align:center;
-}
-.label_rose img {
-	position:absolute;margin-left:-30px
-}
-.label_orange{
-	background-color:#F4B332;
-	padding:5px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	/*color:#5992c6;
-	*/
-	color:#fff;
-	font-size:12px;
-	font-weight:bold;
-	text-align:center;
-}
-.label_orange img {
-	position:absolute;margin-left:-30px
-}
-.label_jaune{
-	background-color:#E9E93B;
-	padding:5px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	/*color:#5992c6;
-	*/
-	color:#000;
-	font-size:12px;
-	font-weight:bold;
-	text-align:center;
-}
-.label_jaune img {
-	position:absolute;margin-left:-30px
 }
 
 /*

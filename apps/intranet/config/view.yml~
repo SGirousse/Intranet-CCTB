@@ -18,3 +18,9 @@ default:
 
   has_layout:     true
   layout:         layout
+  
+  # Les "slots composants" fixes à afficher sur chaques pages
+  components:
+    menuPrincipal: [menu, menuPrincipal]
+    sousMenu: [menu, sousMenu]
+    profil: [utilisateur, showProfil]

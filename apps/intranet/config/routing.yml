@@ -9,8 +9,15 @@ homepage:
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
-  url:   /:module
+  url:   /:sf_culture/:module
   param: { action: index }
 
 default:
-  url:   /:module/:action/*
+  url:   /:sf_culture/:module/:action/*
+  
+# Page d'accueil en fonction de la langue
+localized_homepage:
+  url:   /:sf_culture/
+  param: { module: accueil, action: index }
+  requirements:
+    sf_culture: (?:fr|en|de)

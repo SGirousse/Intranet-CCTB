@@ -1,0 +1,94 @@
+/*
+	Ce fichier regroupe les différents labels de couleur utilisé dans l'application
+*/
+.label_vert{
+	background-color:#34A65A;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_vert img {
+	position:absolute;margin-left:-30px
+}
+.label_bleu{
+	background-color:#5992c6;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	height:20px;
+}
+.label_bleu img {
+	position:absolute;margin-left:-30px
+}
+.label_bordeau{
+	background-color:#823559;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_bordeau img {
+	position:absolute;margin-left:-30px
+}
+.label_rose{
+	background-color:#D69FE3;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_rose img {
+	position:absolute;margin-left:-30px
+}
+.label_orange{
+	background-color:#F4B332;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_orange img {
+	position:absolute;margin-left:-30px
+}
+.label_jaune{
+	background-color:#E9E93B;
+	padding:5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*color:#5992c6;
+	*/
+	color:#000;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+.label_jaune img {
+	position:absolute;margin-left:-30px
+}
