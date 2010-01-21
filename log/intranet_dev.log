@@ -15557,3 +15557,246 @@ Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.70 
 Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
 Jan 20 16:27:45 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.68 ms (1)
 Jan 20 16:27:45 symfony [info] {sfWebResponse} Send content (96280 o)
+Jan 20 16:32:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:32:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:32:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:32:31 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:32:31 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:32:31 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:32:31 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:32:31 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:32:31 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:32:31 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:32:31 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:32:31 symfony [info] {main} Get slot "title"
+Jan 20 16:32:31 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:32:31 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:32:31 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:32:31 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:32:31 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:32:31 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:32:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:32:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Configuration 93.79 ms (14)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Factories 102.71 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Action "accueil/index" 37.98 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 86.34 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.03 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.79 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.04 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.73 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.85 ms (1)
+Jan 20 16:32:31 symfony [info] {sfWebResponse} Send content (93678 o)
+Jan 20 16:33:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:33:13 symfony [info] {myUser} Flag old flash messages ("error")
+Jan 20 16:33:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:33:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:33:13 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:33:13 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:33:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:33:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:33:14 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (8)
+Jan 20 16:33:14 symfony [info] {sfWebDebugLogger} Factories 34.86 ms (1)
+Jan 20 16:33:14 symfony [info] {sfWebDebugLogger} Action "accueil/index" 83.16 ms (1)
+Jan 20 16:36:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:36:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:36:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:36:48 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:36:48 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:36:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:36:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:36:48 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (8)
+Jan 20 16:36:48 symfony [info] {sfWebDebugLogger} Factories 39.73 ms (1)
+Jan 20 16:36:48 symfony [info] {sfWebDebugLogger} Action "accueil/index" 89.84 ms (1)
+Jan 20 16:36:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:36:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:36:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:36:51 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:36:51 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:36:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:36:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:36:51 symfony [info] {sfWebDebugLogger} Configuration 1.35 ms (8)
+Jan 20 16:36:51 symfony [info] {sfWebDebugLogger} Factories 33.05 ms (1)
+Jan 20 16:36:51 symfony [info] {sfWebDebugLogger} Action "accueil/index" 170.62 ms (1)
+Jan 20 16:37:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:37:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:37:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:37:11 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:37:11 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:37:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:37:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:37:12 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (8)
+Jan 20 16:37:12 symfony [info] {sfWebDebugLogger} Factories 42.74 ms (1)
+Jan 20 16:37:12 symfony [info] {sfWebDebugLogger} Action "accueil/index" 83.89 ms (1)
+Jan 20 16:37:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:37:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:37:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:37:49 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:43:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:43:05 symfony [info] {myUser} Flag old flash messages ("notice")
+Jan 20 16:43:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:43:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:43:05 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:43:05 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:43:05 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:43:05 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:43:05 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:43:06 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:43:06 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:43:06 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:43:06 symfony [info] {main} Get slot "title"
+Jan 20 16:43:06 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:43:06 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:43:06 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:43:06 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:43:06 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:43:06 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:43:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:43:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Configuration 284.56 ms (14)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Factories 468.08 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Action "accueil/index" 321.32 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 645.71 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.08 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 13.29 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.09 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 7.04 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.08 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 5.41 ms (1)
+Jan 20 16:43:06 symfony [info] {sfWebResponse} Send content (92560 o)
+Jan 20 16:43:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:43:27 symfony [info] {myUser} Flag old flash messages ("notice")
+Jan 20 16:43:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:43:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:43:27 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:43:27 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 20 16:43:27 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 20 16:43:27 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 20 16:43:27 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 20 16:43:27 symfony [info] {main} Set slot "sousMenu"
+Jan 20 16:43:27 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:43:27 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 20 16:43:27 symfony [info] {main} Get slot "title"
+Jan 20 16:43:27 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 20 16:43:27 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 20 16:43:27 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 20 16:43:27 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 20 16:43:27 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 20 16:43:27 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 20 16:43:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 20 16:43:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Configuration 47.63 ms (14)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Factories 35.83 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Action "accueil/index" 34.55 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 82.73 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.03 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 0.79 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.04 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 0.73 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.01 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 0.87 ms (1)
+Jan 20 16:43:27 symfony [info] {sfWebResponse} Send content (92992 o)
+Jan 20 16:43:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:43:37 symfony [info] {myUser} Flag old flash messages ("notice")
+Jan 20 16:43:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:43:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:43:37 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:43:37 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:43:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:43:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:43:37 symfony [info] {sfWebDebugLogger} Configuration 1.13 ms (8)
+Jan 20 16:43:37 symfony [info] {sfWebDebugLogger} Factories 41.13 ms (1)
+Jan 20 16:43:37 symfony [info] {sfWebDebugLogger} Action "accueil/index" 484.50 ms (1)
+Jan 20 16:50:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:50:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:51:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:52:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:52:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:52:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:52:59 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:52:59 symfony [err] {Doctrine_Transaction_Exception} Rollback failed. There is no active transaction.
+Jan 20 16:52:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:52:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:52:59 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (8)
+Jan 20 16:52:59 symfony [info] {sfWebDebugLogger} Factories 34.83 ms (1)
+Jan 20 16:52:59 symfony [info] {sfWebDebugLogger} Action "accueil/index" 107.54 ms (1)
+Jan 20 16:53:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:53:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:53:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:53:53 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:53:53 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/exception/sfException.class.php on line 105 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:53:53 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Jan 20 16:53:53 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/exception/sfException.class.php on line 159 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:53:53 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:53:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:53:53 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:53:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:53:53 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (8)
+Jan 20 16:53:53 symfony [info] {sfWebDebugLogger} Factories 34.15 ms (1)
+Jan 20 16:53:53 symfony [info] {sfWebDebugLogger} Action "accueil/index" 111.01 ms (1)
+Jan 20 16:54:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:54:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:54:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:54:47 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:54:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 20 16:54:48 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO type (libelle) VALUES (?) - (sdfgsd)
+Jan 20 16:54:48 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/exception/sfException.class.php on line 105 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:54:48 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'intranet.type' doesn't exist
+Jan 20 16:54:48 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/exception/sfException.class.php on line 159 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:54:48 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:54:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:54:48 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:54:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:54:48 symfony [info] {sfWebDebugLogger} Configuration 12.84 ms (9)
+Jan 20 16:54:48 symfony [info] {sfWebDebugLogger} Factories 34.06 ms (1)
+Jan 20 16:54:48 symfony [info] {sfWebDebugLogger} Action "accueil/index" 539.61 ms (1)
+Jan 20 16:54:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (1)
+Jan 20 16:55:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 20 16:55:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 20 16:55:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 20 16:55:30 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 20 16:55:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 20 16:55:30 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO type (libelle) VALUES (?) - (sdfgsd)
+Jan 20 16:55:30 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/exception/sfException.class.php on line 105 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:55:30 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S22]: Column not found: 1054 Unknown column 'libelle' in 'field list'
+Jan 20 16:55:30 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/exception/sfException.class.php on line 159 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:55:30 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:55:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 20 16:55:30 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/stage/Intranet-CCTB/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/actions/actions.class.php:39))
+Jan 20 16:55:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 20 16:55:30 symfony [info] {sfWebDebugLogger} Configuration 11.81 ms (9)
+Jan 20 16:55:30 symfony [info] {sfWebDebugLogger} Factories 32.95 ms (1)
+Jan 20 16:55:30 symfony [info] {sfWebDebugLogger} Action "accueil/index" 239.03 ms (1)
+Jan 20 16:55:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Jan 21 09:24:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Jan 21 09:24:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 21 09:24:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 21 09:24:16 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Jan 21 09:24:16 symfony [info] {sfPHPView} Set component "menuPrincipal" (menu/menuPrincipal)
+Jan 21 09:24:16 symfony [info] {sfPHPView} Set component "sousMenu" (menu/sousMenu)
+Jan 21 09:24:16 symfony [info] {sfPHPView} Set component "profil" (utilisateur/showProfil)
+Jan 21 09:24:16 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/accueil/templates/indexSuccess.php"
+Jan 21 09:24:16 symfony [info] {main} Set slot "sousMenu"
+Jan 21 09:24:16 symfony [info] {sfPHPView} Decorate content with "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 21 09:24:16 symfony [info] {sfPHPView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/templates/layout.php"
+Jan 21 09:24:16 symfony [info] {main} Get slot "title"
+Jan 21 09:24:16 symfony [info] {main} Call "menu->executeMenuPrincipal()"
+Jan 21 09:24:16 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_menuPrincipal.php"
+Jan 21 09:24:16 symfony [info] {main} Call "menu->executeSousMenu()"
+Jan 21 09:24:16 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/menu/templates/_sousMenu.php"
+Jan 21 09:24:16 symfony [info] {main} Call "utilisateur->executeShowProfil()"
+Jan 21 09:24:16 symfony [info] {sfPartialView} Render "/var/www/stage/Intranet-CCTB/apps/intranet/modules/utilisateur/templates/_showProfil.php"
+Jan 21 09:24:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 21 09:24:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Configuration 263.45 ms (14)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Factories 181.03 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Action "accueil/index" 39.95 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 349.81 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Component "menu/menuPrincipal" 0.08 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Partial "menu/_menuPrincipal" 1.92 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Component "menu/sousMenu" 0.09 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Partial "menu/_sousMenu" 1.71 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Component "utilisateur/showProfil" 0.03 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebDebugLogger} Partial "utilisateur/_showProfil" 2.31 ms (1)
+Jan 21 09:24:16 symfony [info] {sfWebResponse} Send content (90480 o)

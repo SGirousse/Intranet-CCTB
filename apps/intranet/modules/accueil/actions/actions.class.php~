@@ -17,21 +17,30 @@ class accueilActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {   
-    $this->getUser()->setFlash('error', 'Ceci est la zone d\'affichage des messages flash "notice" et "error"'); 
+    $this->getUser()->setFlash('notice', 'Ceci est la zone d\'affichage des messages flash "notice" et "error"'); 
 
-	$user = new personneForm();
+	$user = new TypeForm();
 	$this->form = $user;
 
 	if ($request->isMethod('post'))
 	{
-		$this->form->bind($request->getParameter('personne'));
-		if ($this->form->isValid())
-		{
-			echo 'ok';			
-//$this->form->save();
-		}
-	}
-  }
-}
+		$this->form->bind($request->getParameter('type'), array());
+		if ($this->form->isValid()){
+			$con = Doctrine_Manager::connection();
 
+                        try{
+                                $con->beginTransaction();
+
+                                $newDocument = $this->form->save($con);
+
+                                $con->commit();
+                        }
+                        catch(Exception $e){
+                                $con->rollback();
+                        throw $e;
+			}
+		}
+  	}
+   }
+}
 ?>
