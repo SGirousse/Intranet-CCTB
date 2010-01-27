@@ -15,12 +15,47 @@ class utilisateurActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeLogin(sfWebRequest $request)
-  {   
-    // Nous changeons de layout
-    $this->setLayout('login');
-    
-    // Affichage du formulaire d'authentification
-  }
+	public function executeIndex(sfWebRequest $request)
+	{
+
+	}
+
+	/**
+	 *execute AddUser()
+	 *Affichage du formulaire d'ajout d'un utilisateur.
+	 *Récupère les informations du formulaires pour exécuter la requête
+	 *après avoir effectuer les vérifications nécessaires
+	 * @param	sfWebRequest $request  A web request object
+
+	 */
+	public function executeAddUser($request)
+	{
+		//création d'un nouveau formulaire pour un utilisateur
+		//partie 'Personne'
+		$this->formulaire = new ProductForm();
+		//partie 'Mail'
+		//$this->formMail = new emailForm();
+
+		//si la méthode d'envoi est bien 'post' alors onc ontinue les traitements
+		if($request->isMethod('post'))
+		{
+			//on récupère les paramètres
+			$this->formulaire->bind($request->getParameter('product'));
+			//$this->formMail->bind($request->getParameter('email'), $request->getFiles('email'));
+
+			//si les paramètres sont valides
+			if ($this->formulaire->isValid())
+			{
+				/*if ($this->formMail->isValid() )
+				{
+					$this->formMail->save();
+				}*/
+				//on sauve les informations
+				$this->formulaire->save();
+				//on redirige l'utilisateur vers la page d'index du module utlisateur
+				$this->redirect('utilisateur/index');
+			}
+		}
+	}
 }
 ?>

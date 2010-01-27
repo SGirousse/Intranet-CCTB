@@ -16,8 +16,8 @@ Doctrine_Manager::getInstance()->bindComponent('Groupe', 'doctrine');
  * @property Type $Type
  * @property Doctrine_Collection $Adresse
  * @property Doctrine_Collection $ContactPro
+ * @property Doctrine_Collection $Email
  * @property Doctrine_Collection $Fax
- * @property Doctrine_Collection $Mail
  * @property Doctrine_Collection $Telephone
  * 
  * @method integer             getId()          Returns the current record's "id" value
@@ -29,8 +29,8 @@ Doctrine_Manager::getInstance()->bindComponent('Groupe', 'doctrine');
  * @method Type                getType()        Returns the current record's "Type" value
  * @method Doctrine_Collection getAdresse()     Returns the current record's "Adresse" collection
  * @method Doctrine_Collection getContactPro()  Returns the current record's "ContactPro" collection
+ * @method Doctrine_Collection getEmail()       Returns the current record's "Email" collection
  * @method Doctrine_Collection getFax()         Returns the current record's "Fax" collection
- * @method Doctrine_Collection getMail()        Returns the current record's "Mail" collection
  * @method Doctrine_Collection getTelephone()   Returns the current record's "Telephone" collection
  * @method Groupe              setId()          Sets the current record's "id" value
  * @method Groupe              setParentId()    Sets the current record's "parent_id" value
@@ -41,8 +41,8 @@ Doctrine_Manager::getInstance()->bindComponent('Groupe', 'doctrine');
  * @method Groupe              setType()        Sets the current record's "Type" value
  * @method Groupe              setAdresse()     Sets the current record's "Adresse" collection
  * @method Groupe              setContactPro()  Sets the current record's "ContactPro" collection
+ * @method Groupe              setEmail()       Sets the current record's "Email" collection
  * @method Groupe              setFax()         Sets the current record's "Fax" collection
- * @method Groupe              setMail()        Sets the current record's "Mail" collection
  * @method Groupe              setTelephone()   Sets the current record's "Telephone" collection
  * 
  * @package    intranet-cctb
@@ -120,11 +120,11 @@ abstract class BaseGroupe extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'groupe_id'));
 
-        $this->hasMany('Fax', array(
+        $this->hasMany('Email', array(
              'local' => 'id',
              'foreign' => 'groupe_id'));
 
-        $this->hasMany('Mail', array(
+        $this->hasMany('Fax', array(
              'local' => 'id',
              'foreign' => 'groupe_id'));
 

@@ -13,34 +13,40 @@ Doctrine_Manager::getInstance()->bindComponent('Personne', 'doctrine');
  * @property string $civ
  * @property date $date_naissance
  * @property string $photo
+ * @property integer $sf_guard_user_id
+ * @property sfGuardUser $sfGuardUser
  * @property Doctrine_Collection $Adresse
  * @property Doctrine_Collection $ContactPro
+ * @property Doctrine_Collection $Email
  * @property Doctrine_Collection $Fax
- * @property Doctrine_Collection $Mail
  * @property Doctrine_Collection $Telephone
  * 
- * @method integer             getId()             Returns the current record's "id" value
- * @method string              getNom()            Returns the current record's "nom" value
- * @method string              getPrenom()         Returns the current record's "prenom" value
- * @method string              getCiv()            Returns the current record's "civ" value
- * @method date                getDateNaissance()  Returns the current record's "date_naissance" value
- * @method string              getPhoto()          Returns the current record's "photo" value
- * @method Doctrine_Collection getAdresse()        Returns the current record's "Adresse" collection
- * @method Doctrine_Collection getContactPro()     Returns the current record's "ContactPro" collection
- * @method Doctrine_Collection getFax()            Returns the current record's "Fax" collection
- * @method Doctrine_Collection getMail()           Returns the current record's "Mail" collection
- * @method Doctrine_Collection getTelephone()      Returns the current record's "Telephone" collection
- * @method Personne            setId()             Sets the current record's "id" value
- * @method Personne            setNom()            Sets the current record's "nom" value
- * @method Personne            setPrenom()         Sets the current record's "prenom" value
- * @method Personne            setCiv()            Sets the current record's "civ" value
- * @method Personne            setDateNaissance()  Sets the current record's "date_naissance" value
- * @method Personne            setPhoto()          Sets the current record's "photo" value
- * @method Personne            setAdresse()        Sets the current record's "Adresse" collection
- * @method Personne            setContactPro()     Sets the current record's "ContactPro" collection
- * @method Personne            setFax()            Sets the current record's "Fax" collection
- * @method Personne            setMail()           Sets the current record's "Mail" collection
- * @method Personne            setTelephone()      Sets the current record's "Telephone" collection
+ * @method integer             getId()               Returns the current record's "id" value
+ * @method string              getNom()              Returns the current record's "nom" value
+ * @method string              getPrenom()           Returns the current record's "prenom" value
+ * @method string              getCiv()              Returns the current record's "civ" value
+ * @method date                getDateNaissance()    Returns the current record's "date_naissance" value
+ * @method string              getPhoto()            Returns the current record's "photo" value
+ * @method integer             getSfGuardUserId()    Returns the current record's "sf_guard_user_id" value
+ * @method sfGuardUser         getSfGuardUser()      Returns the current record's "sfGuardUser" value
+ * @method Doctrine_Collection getAdresse()          Returns the current record's "Adresse" collection
+ * @method Doctrine_Collection getContactPro()       Returns the current record's "ContactPro" collection
+ * @method Doctrine_Collection getEmail()            Returns the current record's "Email" collection
+ * @method Doctrine_Collection getFax()              Returns the current record's "Fax" collection
+ * @method Doctrine_Collection getTelephone()        Returns the current record's "Telephone" collection
+ * @method Personne            setId()               Sets the current record's "id" value
+ * @method Personne            setNom()              Sets the current record's "nom" value
+ * @method Personne            setPrenom()           Sets the current record's "prenom" value
+ * @method Personne            setCiv()              Sets the current record's "civ" value
+ * @method Personne            setDateNaissance()    Sets the current record's "date_naissance" value
+ * @method Personne            setPhoto()            Sets the current record's "photo" value
+ * @method Personne            setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
+ * @method Personne            setSfGuardUser()      Sets the current record's "sfGuardUser" value
+ * @method Personne            setAdresse()          Sets the current record's "Adresse" collection
+ * @method Personne            setContactPro()       Sets the current record's "ContactPro" collection
+ * @method Personne            setEmail()            Sets the current record's "Email" collection
+ * @method Personne            setFax()              Sets the current record's "Fax" collection
+ * @method Personne            setTelephone()        Sets the current record's "Telephone" collection
  * 
  * @package    intranet-cctb
  * @subpackage model
@@ -105,11 +111,24 @@ abstract class BasePersonne extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => '45',
              ));
+        $this->hasColumn('sf_guard_user_id', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => '4',
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('sfGuardUser', array(
+             'local' => 'sf_guard_user_id',
+             'foreign' => 'id'));
+
         $this->hasMany('Adresse', array(
              'local' => 'id',
              'foreign' => 'personne_id'));
@@ -118,11 +137,11 @@ abstract class BasePersonne extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'personne_id'));
 
-        $this->hasMany('Fax', array(
+        $this->hasMany('Email', array(
              'local' => 'id',
              'foreign' => 'personne_id'));
 
-        $this->hasMany('Mail', array(
+        $this->hasMany('Fax', array(
              'local' => 'id',
              'foreign' => 'personne_id'));
 

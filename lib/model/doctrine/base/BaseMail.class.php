@@ -11,21 +11,21 @@ Doctrine_Manager::getInstance()->bindComponent('Mail', 'doctrine');
  * @property integer $personne_id
  * @property integer $groupe_id
  * @property string $email
- * @property Personne $Personne
  * @property Groupe $Groupe
+ * @property Personne $Personne
  * 
  * @method integer  getId()          Returns the current record's "id" value
  * @method integer  getPersonneId()  Returns the current record's "personne_id" value
  * @method integer  getGroupeId()    Returns the current record's "groupe_id" value
  * @method string   getEmail()       Returns the current record's "email" value
- * @method Personne getPersonne()    Returns the current record's "Personne" value
  * @method Groupe   getGroupe()      Returns the current record's "Groupe" value
+ * @method Personne getPersonne()    Returns the current record's "Personne" value
  * @method Mail     setId()          Sets the current record's "id" value
  * @method Mail     setPersonneId()  Sets the current record's "personne_id" value
  * @method Mail     setGroupeId()    Sets the current record's "groupe_id" value
  * @method Mail     setEmail()       Sets the current record's "email" value
- * @method Mail     setPersonne()    Sets the current record's "Personne" value
  * @method Mail     setGroupe()      Sets the current record's "Groupe" value
+ * @method Mail     setPersonne()    Sets the current record's "Personne" value
  * 
  * @package    intranet-cctb
  * @subpackage model
@@ -77,12 +77,12 @@ abstract class BaseMail extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('Personne', array(
-             'local' => 'personne_id',
-             'foreign' => 'id'));
-
         $this->hasOne('Groupe', array(
              'local' => 'groupe_id',
+             'foreign' => 'id'));
+
+        $this->hasOne('Personne', array(
+             'local' => 'personne_id',
              'foreign' => 'id'));
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-class myUser extends sfBasicSecurityUser
+class myUser extends sfGuardSecurityUser
 {
 	/*
 		Cette méthode vérifie s'il s'agit d'une première visite

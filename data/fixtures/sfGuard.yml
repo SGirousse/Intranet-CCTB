@@ -1,0 +1,31 @@
+sfGuardUser:
+  sgu_admin:
+    username:       admin
+    password:       admin
+    is_super_admin: true
+
+personne:
+  p_admin:
+    nom: marc
+    prenom: lavoine
+    sfGuardUser: sgu_admin
+
+sfGuardPermission:
+  sgp_admin:
+    name:           admin
+    description:    Administrator permission
+
+sfGuardUserGroup:
+  sgug_admin:
+      SfGuardGroup: sgg_admin
+      SfGuardUser: sgu_admin
+
+sfGuardGroup:
+  sgg_admin:
+    name:          admin
+    description:    Administrator group
+
+sfGuardGroupPermission:
+  sggp_admin:
+    SfGuardGroup:       sgg_admin
+    SfGuardPermission:  sgp_admin

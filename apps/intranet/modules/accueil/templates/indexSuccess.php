@@ -16,10 +16,3 @@ echo '<br>';
 echo format_date('2009-11-25');
 echo '<br>';
 ?>
-<form action="<?php echo url_for('accueil/index') ?>" method="post" >
-<ul>
-<?php
-echo $form;
-?>
-</ul>
-</form>

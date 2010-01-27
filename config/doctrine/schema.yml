@@ -1,3 +1,32 @@
+Action:
+  connection: doctrine
+  tableName: action
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    intitule:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    module_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Module:
+      local: module_id
+      foreign: id
+      type: one
 Adresse:
   connection: doctrine
   tableName: adresse
@@ -147,6 +176,50 @@ Departement:
       local: region_id
       foreign: departement_id
       type: many
+Email:
+  connection: doctrine
+  tableName: email
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    personne_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    groupe_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Personne:
+       alias : Personne
+       foreignType: many
+       foreignAlias: Mails
+       onDelete: cascade
+#      local: personne_id
+#      foreign: id
+#      type: one
+    Groupe:
+      local: groupe_id
+      foreign: id
+      type: one
 Fax:
   connection: doctrine
   tableName: fax
@@ -264,11 +337,11 @@ Groupe:
       local: id
       foreign: groupe_id
       type: many
-    Fax:
+    Email:
       local: id
       foreign: groupe_id
       type: many
-    Mail:
+    Fax:
       local: id
       foreign: groupe_id
       type: many
@@ -276,31 +349,17 @@ Groupe:
       local: id
       foreign: groupe_id
       type: many
-Mail:
+Module:
   connection: doctrine
-  tableName: mail
+  tableName: module
   columns:
     id:
       type: integer(4)
       fixed: false
       unsigned: false
       primary: true
-      autoincrement: true
-    personne_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
       autoincrement: false
-    groupe_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    email:
+    nom:
       type: string(45)
       fixed: false
       unsigned: false
@@ -308,14 +367,10 @@ Mail:
       notnull: true
       autoincrement: false
   relations:
-    Personne:
-      local: personne_id
-      foreign: id
-      type: one
-    Groupe:
-      local: groupe_id
-      foreign: id
-      type: one
+    Action:
+      local: id
+      foreign: module_id
+      type: many
 Personne:
   connection: doctrine
   tableName: personne
@@ -361,7 +416,15 @@ Personne:
       primary: false
       notnull: false
       autoincrement: false
+    sf_guard_user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
   relations:
+    sfGuardUser: { local: sf_guard_user_id, foreign: id, foreignType: one }
     Adresse:
       local: id
       foreign: personne_id
@@ -374,14 +437,26 @@ Personne:
       local: id
       foreign: personne_id
       type: many
-    Mail:
-      local: id
-      foreign: personne_id
-      type: many
     Telephone:
       local: id
       foreign: personne_id
       type: many
+Product:
+  columns:
+    name:           { type: string(255), notnull: true }
+    price:          { type: decimal, notnull: true }
+ 
+ProductPhoto:
+  columns:
+    product_id:     { type: integer }
+    filename:       { type: string(255) }
+    caption:        { type: string(255), notnull: true }
+  relations:
+    Product:
+      alias:        Product
+      foreignType:  many
+      foreignAlias: Photos
+      onDelete:     cascade
 Region:
   connection: doctrine
   tableName: region

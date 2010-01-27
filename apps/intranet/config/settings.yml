@@ -24,6 +24,8 @@ test:
 
 all:
   .settings:
+    #sfDoctrineGuardPlugin
+    enabled_modules:    [default, sfGuardGroup, sfGuardUser, sfGuardPermission, sfGuardAuth]
     # Les réglages linguisitiques
     charset: utf-8
     default_culture: en_GB
@@ -46,5 +48,8 @@ all:
     
   # Permet de définir le module et l'action à utiliser pour l'authentification
   .actions:
-    login_module: utilisateur
-    login_action: login
+    login_module: sfGuardAuth
+    login_action: signin
+
+    secure_module: sfGuardAuth
+    secure_action: secure

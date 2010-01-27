@@ -24,7 +24,9 @@ class menuComponents extends sfComponents
 		 */
 		 $this->menu = array(
 		 			array('lien' => 'http://google.fr', 'titre' => 'Google' ),
-		 			array('lien' => 'http://yahoo.fr', 'titre' => 'Yahoo' )
+		 			array('lien' => 'http://yahoo.fr', 'titre' => 'Yahoo' ),
+					array('lien' => url_for('accueil/index'), 'titre' => 'Accueil'),
+					array('lien' => url_for('utilisateur/index'), 'titre' => 'Gestion utilisateur')
 		 );
 	}
 	
@@ -45,7 +47,8 @@ class menuComponents extends sfComponents
 		 */
 		 $this->menu = array(
 		 			array('lien' => 'http://google.fr', 'titre' => 'Google' ),
-		 			array('lien' => 'http://yahoo.fr', 'titre' => 'Yahoo' )
+		 			array('lien' => 'http://yahoo.fr', 'titre' => 'Yahoo' ),
+					array('lien' => url_for('utilisateur/addUser'), 'titre' => 'Ajout utlisateur' )
 		 );
 	}
 }
