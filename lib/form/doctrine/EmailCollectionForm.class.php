@@ -9,16 +9,9 @@ class EmailCollectionForm extends sfForm
 		{
 			throw new InvalidArgumentException('Vous devez lier cet email à une personne');
 		}
-			/*$email->Personne = $entiteLiee;
-		}else{
-			if ($entiteLiee == $this->getOption('groupe'))
-			{
-				$email->Groupe = $entiteLiee;
-			}else{
-				//sinon on renvoie une erreur
-				throw new InvalidArgumentException('Vous devez lier cet email à une personne ou un groupe.');
-			}*/
-		for ($i=0; $i < $this->getOption('size'); $i++)
+	
+		
+		for ($i=0; $i < $this->getOption('size',2); $i++)
 		{
 			//on intancie un mail
 			$email = new Email();
@@ -28,6 +21,7 @@ class EmailCollectionForm extends sfForm
 		}
 
 
-		//$this->mergePostValidator(new EmailValidatorSchema() );
+		$this->mergePostValidator(new EmailValidatorSchema() );
 	}
 }
+?>

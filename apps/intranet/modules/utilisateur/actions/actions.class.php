@@ -32,24 +32,17 @@ class utilisateurActions extends sfActions
 	{
 		//création d'un nouveau formulaire pour un utilisateur
 		//partie 'Personne'
-		$this->formulaire = new ProductForm();
-		//partie 'Mail'
-		//$this->formMail = new emailForm();
+		$this->formulaire = new PersonneForm();
 
 		//si la méthode d'envoi est bien 'post' alors onc ontinue les traitements
 		if($request->isMethod('post'))
 		{
 			//on récupère les paramètres
-			$this->formulaire->bind($request->getParameter('product'));
-			//$this->formMail->bind($request->getParameter('email'), $request->getFiles('email'));
+			$this->formulaire->bind($request->getParameter('personne'));
 
 			//si les paramètres sont valides
 			if ($this->formulaire->isValid())
 			{
-				/*if ($this->formMail->isValid() )
-				{
-					$this->formMail->save();
-				}*/
 				//on sauve les informations
 				$this->formulaire->save();
 				//on redirige l'utilisateur vers la page d'index du module utlisateur

@@ -8,5 +8,5 @@
 <?php end_slot() ?>
 
 <?php
-echo 'index moduel ajout utilisateur';
+echo 'Index du module ajout d\'utilisateur';
 ?>

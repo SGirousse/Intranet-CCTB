@@ -21,18 +21,15 @@ class PersonneForm extends BasePersonneForm
 		$form = new EmailCollectionForm(null, array(
 			'personne' => $this->getObject(),
 			'size' => 1,
-		));/*
- 		$subForm = new sfForm();
- 		 for ($i = 0; $i < 2; $i++)
-  		{
-    			$people = new Email();
-    			$people->Personne = $this->getObject();
- 
- 			$form = new EmailForm($people);
- 
-    			$subForm->embedForm($i, $form);
-  		}*/
+		));
 		$this->embedForm('newEmails', $form);
+		
+		$form = new TelephoneCollectionForm(null, array(
+			'personne' => $this->getObject(),
+			'size' => 1,
+		));
+
+		$this->embedForm('newPhones', $form);
 
 		//assignation de widget particulières
 		//on traitera les widgets une par une et non dans un tableau global pour éviter d'avoir à redéfinir toutes les widgets
@@ -53,40 +50,55 @@ class PersonneForm extends BasePersonneForm
 		//$this->widgetSchema->setFormFormatterName('list');
 
 		//validateurs
-		$this->setValidators(array(
-			'nom' => new sfValidatorString(array('trim' => true), array('required' => 'Il faut renseigner le nom')) ,
-			'prenom' => new sfValidatorString(array('trim' => true)),
-			'civ' => new sfValidatorString(array('required' => false , 'trim' => true)),
-			'date_naissance' => new sfValidatorDateTime(array('required' => false)),
-			'photo' => new sfValidatorString(array('required' =>false)),
-			'sf_guard_user_id' => new sfValidatorInteger(array('required' => false)),
+		$this->setValidator( 'nom', new sfValidatorString(
+			array('trim' => true), array('required' => 'Il faut renseigner le nom')
 		));
-
-		//post validateur (vérifications supplémentaires, entre deux champs par exemple)
-		/*$this->validatorSchema->setPostValidator(
-			new sfValidatorSchemaCompare('nom', '==', 'prenom' ,
-				array('throw_global_error' => true), //si ce champs est vide = false
-				array('invalid' => 'Refus de personnes ayant un nom et un prenom différent ??')
-			)
-
-		);*/
+		$this->setValidator( 'prenom', new sfValidatorString(
+			array('trim' => true)
+		));
+		$this->setValidator( 'civ', new sfValidatorString(
+			array('required' => false , 'trim' => true)
+		));
+		$this->setValidator( 'date_naissance', new sfValidatorDateTime(
+			array('required' => false)
+		));
+		$this->setValidator( 'photo', new sfValidatorString(
+			array('required' =>false)
+		));
+		$this->setValidator( 'sf_guard_user_id', new sfValidatorInteger(
+			array('required' => false)
+		));
   }
 
- /* public function saveEmbeddedForms($con = null, $form = null)
+  public function saveEmbeddedForms($con = null, $forms = null)
   {
-	if ($forms == null)
+    if (null === $forms)
+    {
+      $emails = $this->getValue('newEmails');
+      $forms = $this->embeddedForms;
+
+      foreach ($this->embeddedForms['newEmails'] as $email => $formulaire)
+      {
+        if (!isset($emails[$email]))
+        {
+          unset($forms['newEmails'][$email]);
+        }
+      }
+
+     $numeros = $this->getValue('newPhones');
+     
+     foreach($this->embeddedForms['newPhones'] as $numero => $formulaire)
+     {
+	if (!isset($numeros[$numero]))
 	{
-		$mails = $this->getValue('AjoutMail');
-		$forms = $this->embeddedForms;
-
-		//$this->embeddedForms['AjoutMail'][0];	
-
-		if (!isset($mails[0]))
-		{
-			unset($forms['ajoutMail'][0]);
-		}
+	   unset($forms['newPhones'][$numero]);
 	}
+	
+     }
 
-	return parent::saveEmbeddedForms($con, $forms);
-  }*/
+    }
+ 
+    return parent::saveEmbeddedForms($con, $forms);
+  }
+
 }

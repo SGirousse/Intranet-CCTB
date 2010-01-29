@@ -12,5 +12,14 @@ class TelephoneForm extends BaseTelephoneForm
 {
   public function configure()
   {
+	unset($this['id']);
+	
+	$this->useFields(array('numero'));
+
+	$this->setWidget('numero', new sfWidgetFormInput() );
+
+	$this->setValidator('numero', new sfValidatorString(
+		array('required' => false)
+	));
   }
 }

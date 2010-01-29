@@ -1,7 +1,7 @@
 <?
 
 /*
- *Classe email clidaor schema qui hérite du sfValidatorSchema
+ *Classe email validator schema qui hérite du sfValidatorSchema
  *@author : siméon girousse
  */
 class EmailValidatorSchema extends sfValidatorSchema
@@ -13,15 +13,16 @@ class EmailValidatorSchema extends sfValidatorSchema
 
 	protected function doClean($values)
 	{
-		//$errorSchema = new sfValidatorErrorSchema($this);
-		
-		//s'il n'y a pas d'email de saisi
-		if (!$value['email'])
+		foreach ($values as $key => $value)
 		{
-			unset($value[$key]);
+			//s'il n'y a pas d'email de saisi
+			if (!$value['email'])
+			{
+				unset($values[$key]);
+			}
+	
+			return $values;	
 		}
-
-		return $values;	
 	}
 }
 

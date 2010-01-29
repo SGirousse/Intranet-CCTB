@@ -23,7 +23,9 @@ class EmailForm extends BaseEmailForm
 	$this->setWidget('email', new sfWidgetFormInput());
 
 	//validateur
-	//$this->setValidator('email', new sfValidatorEmail(array('required' => false), array('invalid' => 'L\'adresse email est invalide')));
-
+	$this->setValidator('email', new sfValidatorEmail(
+		array('required' => false), array('invalid' => 'L\'adresse email est invalide')
+	));
+	
   }
 }
