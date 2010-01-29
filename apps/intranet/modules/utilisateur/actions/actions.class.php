@@ -28,7 +28,7 @@ class utilisateurActions extends sfActions
 	 * @param	sfWebRequest $request  A web request object
 
 	 */
-	public function executeAddUser($request)
+	public function executeAddUser(sfWebRequest $request)
 	{
 		//création d'un nouveau formulaire pour un utilisateur
 		//partie 'Personne'
@@ -49,6 +49,25 @@ class utilisateurActions extends sfActions
 				$this->redirect('utilisateur/index');
 			}
 		}
+	}
+
+	/*
+	 *	Ajoute un champ email au formulaire personne
+	 *
+	 */
+	public function executeAddEmailForm(sfWebRequest $request){
+//		$this->forward404unless($request->isXmlHttpRequest());
+		$number = intval($request->getParameter("num"));
+
+  		if($personne = Doctrine::getTable('Personne')->find($number)){
+    			$form = new PersonneForm($personne);
+  		}else{
+    			$form = new PersonneForm(null);
+  		}
+
+  		$form->addEmail($number);
+
+	  	return $this->renderPartial('addEmail',array('form' => $form, 'num' => $number));
 	}
 }
 ?>

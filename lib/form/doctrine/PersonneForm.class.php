@@ -14,9 +14,6 @@ class PersonneForm extends BasePersonneForm
   {
 		unset($this['id']);
 
-		//mise en place d'un nom pour le formulaire
-		//$this->widgetSchema->setNameFormat('personne[%s]');
-
 		//on lie le formulaire à un formulaire de mail
 		$form = new EmailCollectionForm(null, array(
 			'personne' => $this->getObject(),
@@ -69,6 +66,19 @@ class PersonneForm extends BasePersonneForm
 			array('required' => false)
 		));
   }
+
+  /*
+   * Pour ajouter un email
+   */
+   public function addEmail($num){
+   	$email = new Email();
+	$email->setPersonne($this->getObject());
+	$email_form = new EmailForm($email);
+
+	// On ajoute le formulaire ainsi crée dans le tableau de formulaire
+	$this->embeddedForms['newEmails']->embedForm($num, $email_form);
+	$this->embedForm('newEmails', $this->embeddedForms['newEmails']);
+   }
 
   public function saveEmbeddedForms($con = null, $forms = null)
   {
