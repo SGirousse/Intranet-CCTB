@@ -7,4 +7,4 @@ all:
     param:
       dsn:      mysql:host=localhost;dbname=intranet
       username: root
-      password: nopwd
+      password: nopass
