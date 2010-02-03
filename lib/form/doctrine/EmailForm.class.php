@@ -16,9 +16,6 @@ class EmailForm extends BaseEmailForm
 	//champs affichés dans le formulaire
 	$this->useFields(array('email'));
 
-	//nom du formulaire
-	//$this->widgetSchema->setNameFormat('mail[%s]');
-
 	//mise en place de la widget
 	$this->setWidget('email', new sfWidgetFormInput());
 

@@ -32,42 +32,59 @@ class utilisateurActions extends sfActions
 	{
 		//création d'un nouveau formulaire pour un utilisateur
 		//partie 'Personne'
-		$this->formulaire = new PersonneForm();
+		$this->form = new PersonneForm();
+
+		print_r($request->getParameter('personne'));
+
+		$this->executeAddEmailForm($request);
+		/*$number = intval($request->getParameter("num"));
+
+		  if($personne = Doctrine::getTable('Personne')->find($number))
+		 {
+  	 		 $this->form = new PersonneForm($personne);
+	 	 }else{
+   			 $this->form = new PersonneForm(null);
+ 	 	 }
+
+	 	$this->form->addEmail(1,'henry');
+
+ 		$this->renderPartial('addEmail',array('form' => $this->form, 'num' => 1));*/
+
 
 		//si la méthode d'envoi est bien 'post' alors onc ontinue les traitements
 		if($request->isMethod('post'))
 		{
 			//on récupère les paramètres
-			$this->formulaire->bind($request->getParameter('personne'));
+			$this->form->bind($request->getParameter('personne'));
 
 			//si les paramètres sont valides
-			if ($this->formulaire->isValid())
+			if ($this->form->isValid())
 			{
 				//on sauve les informations
-				$this->formulaire->save();
+				$this->form->save();
 				//on redirige l'utilisateur vers la page d'index du module utlisateur
-				$this->redirect('utilisateur/index');
-			}
+				//$this->redirect('utilisateur/index');
+			}/*else{
+					$this->executeAddEmailForm($request);
+			}*/
 		}
 	}
 
-	/*
-	 *	Ajoute un champ email au formulaire personne
-	 *
-	 */
-	public function executeAddEmailForm(sfWebRequest $request){
-//		$this->forward404unless($request->isXmlHttpRequest());
-		$number = intval($request->getParameter("num"));
+	public function executeAddEmailForm(sfWebRequest $request)
+	{
+	  //$this->forward404unless($request->isXmlHttpRequest());
+	  $number = intval($request->getParameter("num"));
 
-  		if($personne = Doctrine::getTable('Personne')->find($number)){
-    			$form = new PersonneForm($personne);
-  		}else{
-    			$form = new PersonneForm(null);
-  		}
+	  if($personne = Doctrine::getTable('Personne')->find($number))
+	  {
+  	 	 $form = new PersonneForm($personne);
+	  }else{
+   		 $form = new PersonneForm(null);
+ 	  }
 
-  		$form->addEmail($number);
+ 	 $form->addEmail($number);
 
-	  	return $this->renderPartial('addEmail',array('form' => $form, 'num' => $number));
-	}
+ 	 return $this->renderPartial('addEmail',array('form' => $form, 'num' => $number));
+}
 }
 ?>

@@ -10,8 +10,11 @@
  */
 class PersonneForm extends BasePersonneForm
 {
-  public function configure()
-  {
+	/*
+	 *Fonction de configuration du formulaire de base de 'personne'
+	 */
+	public function configure()
+  	{
 		unset($this['id']);
 
 		//on lie le formulaire à un formulaire de mail
@@ -21,12 +24,13 @@ class PersonneForm extends BasePersonneForm
 		));
 		$this->embedForm('newEmails', $form);
 		
-		$form = new TelephoneCollectionForm(null, array(
+		/*$form = new TelephoneCollectionForm(null, array(
 			'personne' => $this->getObject(),
 			'size' => 1,
 		));
 
-		$this->embedForm('newPhones', $form);
+		$this->embedForm('newPhones', $form);*/
+		
 
 		//assignation de widget particulières
 		//on traitera les widgets une par une et non dans un tableau global pour éviter d'avoir à redéfinir toutes les widgets
@@ -38,13 +42,10 @@ class PersonneForm extends BasePersonneForm
 		//sf_guard_user_id
 
 		//personnalisation des labels
+		$this->widgetSchema->setLabel('prenom','Prénom');
+		$this->widgetSchema->setLabel('civ','Civilité');
+		$this->widgetSchema->setLabel('date_naissance','Date de naissance');
 		$this->widgetSchema->setLabel('sf_guard_user_id','Permission');
-
-		//aide
-		//$this->setDefault('nom', 'Votre nom ici');
-
-		//format du formulaire
-		//$this->widgetSchema->setFormFormatterName('list');
 
 		//validateurs
 		$this->setValidator( 'nom', new sfValidatorString(
@@ -67,48 +68,108 @@ class PersonneForm extends BasePersonneForm
 		));
   }
 
-  /*
-   * Pour ajouter un email
-   */
-   public function addEmail($num){
-   	$email = new Email();
-	$email->setPersonne($this->getObject());
-	$email_form = new EmailForm($email);
+	/**** Fonction d'ajouts dynamique ****/
 
-	// On ajoute le formulaire ainsi crée dans le tableau de formulaire
-	$this->embeddedForms['newEmails']->embedForm($num, $email_form);
-	$this->embedForm('newEmails', $this->embeddedForms['newEmails']);
-   }
 
-  public function saveEmbeddedForms($con = null, $forms = null)
-  {
-    if (null === $forms)
-    {
-      $emails = $this->getValue('newEmails');
-      $forms = $this->embeddedForms;
-
-      foreach ($this->embeddedForms['newEmails'] as $email => $formulaire)
-      {
-        if (!isset($emails[$email]))
-        {
-          unset($forms['newEmails'][$email]);
-        }
-      }
-
-     $numeros = $this->getValue('newPhones');
-     
-     foreach($this->embeddedForms['newPhones'] as $numero => $formulaire)
-     {
-	if (!isset($numeros[$numero]))
+	/*
+	 *Fonction d'ajout d'un email dynamiquement
+	 */
+	public function addEmail($num , $texte = '')
 	{
-	   unset($forms['newPhones'][$numero]);
+		//ajout d'un email
+		$unMail = new Email();
+		$unMail->Personne = $this->getObject();
+		$unMail->setEmail($texte);
+		$mail_form = new EmailForm($unMail);
+		
+		//ajout du mail dans le formulaire
+		$this->embeddedForms['newEmails']->embedForm($num,$mail_form);
+		//mise ne place du formulaire global
+		$this->embedForm('newEmails', $this->embeddedForms['newEmails']);
 	}
-	
-     }
 
-    }
+
+	/*
+	 *
+	 */
+/*	public function addFormEmail($nombre)
+	{
+		$form = new EmailCollectionForm(null, array(
+			'personne' => $this->getObject(),
+			'size' => $nombre,
+		));
+		$this->embedForm('newEmails', $form);
+	}*/
+
+	/**** Surcharge de fonctions ****/
+	
+	/*
+	 *Surcharge de la fonction bind
+	 */
+	public function bind(array $taintedValues = null, array $taintedFiles = null)
+	{
+		//pour chaque valeur de newEmails
+		foreach($taintedValues['newEmails'] as $key => $newEmail)
+  		{
+			//s'il n'y a pas de clé assignée
+    			if (!isset($this['newEmails'][$key]))
+    			{
+				//on en ajoute une
+     			 	$this->addEmail($key);
+	    		}
+	  	}
+	  	parent::bind($taintedValues, $taintedFiles);
+	}
+
+	/*
+	 *surcharge de la fonction saveEmbeddedForms
+	 */
+	public function saveEmbeddedForms($con = null, $forms = null)
+  	{
+   		if (null === $forms)
+    		{
+     			$emails = $this->getValue('newEmails');
+      			$forms = $this->embeddedForms;
+
+      			foreach ($this->embeddedForms['newEmails'] as $email => $form)
+      			{
+        			if (!isset($emails[$email]))
+        			{
+          				unset($forms['newEmails'][$email]);
+        			}
+      			}
+
+     			/*$numeros = $this->getValue('newPhones');
+     
+		        foreach($this->embeddedForms['newPhones'] as $numero => $form)
+     			{
+				if (!isset($numeros[$numero]))
+				{
+	   				unset($forms['newPhones'][$numero]);
+				}
+	
+			}*/
+
+    		}
  
-    return parent::saveEmbeddedForms($con, $forms);
-  }
+    		return parent::saveEmbeddedForms($con, $forms);
+  	}
+	
+	/*public function reloadData(sfWebRequest $request)
+	{	
+		$parameters = ($request->getParameter('personne'));
+		print_r($parameters['newEmails']);
+		$forms = $this->embeddedForms;
+		
+		//pour tout les emails saisis dans le formulaire, excepté le premier (indice 0)
+		for($nb_emails = 0 ; $nb_emails < ($forms['newEmails']->count())-1 ; $nb_emails ++ )
+		{
+			$contenu[] = $parameters['newEmails'][$nb_emails];
+			$this->addEmail($nb_emails, 'henri');
+		}
+		print_r($contenu);
+		print_r($forms['newEmails']->count());
+	}*/
+
 
 }
