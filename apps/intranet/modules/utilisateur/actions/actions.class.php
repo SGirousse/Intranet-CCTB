@@ -31,31 +31,21 @@ class utilisateurActions extends sfActions
 	public function executeAddUser(sfWebRequest $request)
 	{
 		//création d'un nouveau formulaire pour un utilisateur
-		//partie 'Personne'
 		$this->form = new PersonneForm();
 
-		print_r($request->getParameter('personne'));
+		//on récupère les paramètres de la requête
+		$parametres = $request->getParameter('personne');
+		//on compte le nombre de champs des formulaires associés
+		//nombre d'emails	
+	       	$this->emailsNumber = count($parametres['newEmails']);
+		//nombre de numéro de téléphone
+		$this->numerosNumber = count($parametres['newPhones']);
 
-		$this->executeAddEmailForm($request);
-		/*$number = intval($request->getParameter("num"));
-
-		  if($personne = Doctrine::getTable('Personne')->find($number))
-		 {
-  	 		 $this->form = new PersonneForm($personne);
-	 	 }else{
-   			 $this->form = new PersonneForm(null);
- 	 	 }
-
-	 	$this->form->addEmail(1,'henry');
-
- 		$this->renderPartial('addEmail',array('form' => $this->form, 'num' => 1));*/
-
-
-		//si la méthode d'envoi est bien 'post' alors onc ontinue les traitements
+		//si la méthode d'envoi est bien 'post' alors on continue les traitements
 		if($request->isMethod('post'))
 		{
 			//on récupère les paramètres
-			$this->form->bind($request->getParameter('personne'));
+			$this->form->bind($parametres);
 
 			//si les paramètres sont valides
 			if ($this->form->isValid())
@@ -63,10 +53,8 @@ class utilisateurActions extends sfActions
 				//on sauve les informations
 				$this->form->save();
 				//on redirige l'utilisateur vers la page d'index du module utlisateur
-				//$this->redirect('utilisateur/index');
-			}/*else{
-					$this->executeAddEmailForm($request);
-			}*/
+				$this->redirect('utilisateur/index');
+			}
 		}
 	}
 

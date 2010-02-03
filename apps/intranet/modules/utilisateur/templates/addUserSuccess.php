@@ -1,6 +1,6 @@
 <!--script javascript d'ajout de champs emails dynamiquement
 	1. on récupère le nombre de champs emails présents
-	2. 
+	2. on génère les éléments à transmettre et l'url
 	3. on met en place le bouton d'ajout de champs qui déclenche l'action addEmails et renvoir le résultat dans la div extraemails-->
 <script type="text/javascript">
 var emails = <?php print_r($form['newEmails']->count())?>;
@@ -21,6 +21,7 @@ $().ready(function() {
 });
 </script>
 
+
 <form action="<?php echo url_for('utilisateur/addUser') ?>" method="POST" >
 	<table>
 	<?php
@@ -32,10 +33,17 @@ $().ready(function() {
 		echo $form['civ']->renderRow();
 		//champs du formulaire d'email
 		echo $form['newEmails'][0]['email']->renderRow();
-
+		for ($num = 1 ; $num < $emailsNumber ; $num++)
+		{
+			echo $form['newEmails'][$num]['email']->renderRow();
+		}
 		//champs du formulaire de téléphone
-		//echo $form['newPhones'][0]['numero']->renderRow();
-		
+		echo $form['newPhones'][0]['numero']->renderRow();
+		for ($num = 1 ; $num < $numerosNumber ; $num++)
+		{
+			echo $form['newPhones'][$num]['numero']->renderRow();
+		}
+
 		//on ajoute la clé de manière cachée
 		echo $form['_csrf_token']->render();
 	?>

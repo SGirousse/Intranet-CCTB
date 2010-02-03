@@ -24,12 +24,12 @@ class PersonneForm extends BasePersonneForm
 		));
 		$this->embedForm('newEmails', $form);
 		
-		/*$form = new TelephoneCollectionForm(null, array(
+		$form = new TelephoneCollectionForm(null, array(
 			'personne' => $this->getObject(),
 			'size' => 1,
 		));
 
-		$this->embedForm('newPhones', $form);*/
+		$this->embedForm('newPhones', $form);
 		
 
 		//assignation de widget particulières
@@ -88,20 +88,6 @@ class PersonneForm extends BasePersonneForm
 		$this->embedForm('newEmails', $this->embeddedForms['newEmails']);
 	}
 
-
-	/*
-	 *
-	 */
-/*	public function addFormEmail($nombre)
-	{
-		$form = new EmailCollectionForm(null, array(
-			'personne' => $this->getObject(),
-			'size' => $nombre,
-		));
-		$this->embedForm('newEmails', $form);
-	}*/
-
-	/**** Surcharge de fonctions ****/
 	
 	/*
 	 *Surcharge de la fonction bind
@@ -139,7 +125,7 @@ class PersonneForm extends BasePersonneForm
         			}
       			}
 
-     			/*$numeros = $this->getValue('newPhones');
+     			$numeros = $this->getValue('newPhones');
      
 		        foreach($this->embeddedForms['newPhones'] as $numero => $form)
      			{
@@ -148,28 +134,12 @@ class PersonneForm extends BasePersonneForm
 	   				unset($forms['newPhones'][$numero]);
 				}
 	
-			}*/
+			}
 
     		}
  
     		return parent::saveEmbeddedForms($con, $forms);
   	}
-	
-	/*public function reloadData(sfWebRequest $request)
-	{	
-		$parameters = ($request->getParameter('personne'));
-		print_r($parameters['newEmails']);
-		$forms = $this->embeddedForms;
-		
-		//pour tout les emails saisis dans le formulaire, excepté le premier (indice 0)
-		for($nb_emails = 0 ; $nb_emails < ($forms['newEmails']->count())-1 ; $nb_emails ++ )
-		{
-			$contenu[] = $parameters['newEmails'][$nb_emails];
-			$this->addEmail($nb_emails, 'henri');
-		}
-		print_r($contenu);
-		print_r($forms['newEmails']->count());
-	}*/
-
 
 }
+
