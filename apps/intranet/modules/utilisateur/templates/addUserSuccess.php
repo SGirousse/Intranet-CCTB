@@ -1,5 +1,5 @@
 <?php use_javascript('addFields.js'); ?>
-
+<?php use_javascript('popupAddGroup.js'); ?>
 
 
 
