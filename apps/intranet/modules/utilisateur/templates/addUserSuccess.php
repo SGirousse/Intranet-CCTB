@@ -19,6 +19,7 @@ arrayFields['contacts'] = <?php print_r($form['newContacts']->count()); ?>;
 <form action="<?php echo url_for('utilisateur/addUser') ?>" method="POST" >
 	<table>
 	<?php
+
 		//on affiche les champs un par un
 		//champs du formulaire personne
 		echo $form['nom']->renderRow();

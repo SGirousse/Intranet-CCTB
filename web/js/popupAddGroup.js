@@ -1,19 +1,20 @@
 function popupAddGroup(){
 		$("#popupAddGroup").dialog({
 			bgiframe: true,
-			autoOpen: true,
+			autoOpen: false,
 			height: 300,
 			modal: true,
 			buttons: {
 				'Create an account': function() {
-					alert('ok');
+					$(this).dialog('close');
 				},
 				Cancel: function() {
 					$(this).dialog('close');
 				}
 			},
 			close: function() {
-				allFields.val('').removeClass('ui-state-error');
 			}
 		});
+
+		$("#popupAddGroup").dialog('open');
 }

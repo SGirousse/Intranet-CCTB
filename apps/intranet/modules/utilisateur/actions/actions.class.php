@@ -56,7 +56,7 @@ class utilisateurActions extends sfActions
 				//on sauve les informations
 				$this->form->save();
 				//on redirige l'utilisateur vers la page d'index du module utlisateur
-				//$this->redirect('utilisateur/index');
+				$this->redirect('utilisateur/index');
 			}
 		}
 	}
@@ -68,15 +68,16 @@ class utilisateurActions extends sfActions
 	 * après avoir vérifié la validité des champs.
 	 * @param	sfWebRequest $request	A web request object
 	 */
-/*	public function executeAddGroup(sfWebRequest $request)
+	public function executeAddGroup(sfWebRequest $request)
 	{
 		//creation d'un nouveau formulaire pour un groupe
-		$this->form = new TypeForm()
+		$this->form = new GroupeForm();
 
-		//récupération des parametres de la requête dans la variable $parametres
+		//on récupère les paramètres de la requête
+		$parametres = $request->getParameter('groupe');
 
 		//si la méthode d'envoie est bien post on continue les traitements
-		if($request->isMethod('post')
+		if($request->isMethod('post'))
 		{
 			//récupération des paramètres pour l'ajout au formulaire
 			$this->form->bind($parametres);
@@ -90,7 +91,7 @@ class utilisateurActions extends sfActions
 				$this->redirect('utilisateur/index');
 			}
 		}
-	}*/
+	}
 	
 	/****	Fonctions d'ajout dynamique de champs	****/
 

@@ -20,6 +20,7 @@ class GroupeForm extends BaseGroupeForm
 	//mise en place des caractéristiques particulières du formulaire de groupe
 	$this->setWidget('intitule', new sfWidgetFormInput() );
 	$this->setWidget('description', new sfWidgetFormTextArea() );
+	$this->setWidget('type_id', new sfWidgetFormInput() );
 
 	//mise en place des validateurs
 	$this->setValidator('intitule', new sfValidatorString(
