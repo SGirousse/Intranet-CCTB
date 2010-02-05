@@ -1,11 +1,11 @@
 CREATE TABLE action (id INT, intitule VARCHAR(45) NOT NULL, module_id INT NOT NULL, INDEX module_id_idx (module_id), PRIMARY KEY(id)) ENGINE = INNODB;
-CREATE TABLE adresse (id INT AUTO_INCREMENT, ville_id INT NOT NULL, personne_id INT, groupe_id INT, rue VARCHAR(45) NOT NULL, rue_cptl VARCHAR(45) NOT NULL, cp VARCHAR(5) NOT NULL, ville VARCHAR(45) NOT NULL, INDEX ville_id_idx (ville_id), INDEX personne_id_idx (personne_id), INDEX groupe_id_idx (groupe_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE adresse (id INT AUTO_INCREMENT, ville_id INT, personne_id INT, groupe_id INT, rue VARCHAR(45) NOT NULL, rue_cptl VARCHAR(45) NOT NULL, cp VARCHAR(5) NOT NULL, ville VARCHAR(45) NOT NULL, INDEX ville_id_idx (ville_id), INDEX personne_id_idx (personne_id), INDEX groupe_id_idx (groupe_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE contactPro (id INT AUTO_INCREMENT, personne_id INT NOT NULL, groupe_id INT NOT NULL, fonction_id INT NOT NULL, INDEX personne_id_idx (personne_id), INDEX groupe_id_idx (groupe_id), INDEX fonction_id_idx (fonction_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE departement (id INT AUTO_INCREMENT, region_id INT NOT NULL, nom VARCHAR(45) NOT NULL, INDEX region_id_idx (region_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE email (id INT AUTO_INCREMENT, personne_id INT, groupe_id INT, email VARCHAR(45) NOT NULL, INDEX personne_id_idx (personne_id), INDEX groupe_id_idx (groupe_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE fax (id INT AUTO_INCREMENT, personne_id INT, groupe_id INT, numero VARCHAR(45) NOT NULL, INDEX personne_id_idx (personne_id), INDEX groupe_id_idx (groupe_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE fonction (id INT AUTO_INCREMENT, intitule VARCHAR(45) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
-CREATE TABLE groupe (id INT AUTO_INCREMENT, parent_id INT NOT NULL, type_id INT NOT NULL, intitule VARCHAR(45) NOT NULL, description TEXT, INDEX type_id_idx (type_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE groupe (id INT AUTO_INCREMENT, parent_id INT, type_id INT NOT NULL, intitule VARCHAR(45) NOT NULL, description TEXT, INDEX type_id_idx (type_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE mail (id INT AUTO_INCREMENT, personne_id INT, groupe_id INT, email VARCHAR(45) NOT NULL, INDEX groupe_id_idx (groupe_id), INDEX personne_id_idx (personne_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE module (id INT, nom VARCHAR(45) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE personne (id INT AUTO_INCREMENT, nom VARCHAR(45) NOT NULL, prenom VARCHAR(45) NOT NULL, civ VARCHAR(45), date_naissance DATE, photo VARCHAR(45), sf_guard_user_id INT, INDEX sf_guard_user_id_idx (sf_guard_user_id), PRIMARY KEY(id)) ENGINE = INNODB;

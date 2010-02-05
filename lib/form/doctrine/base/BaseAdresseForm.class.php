@@ -16,7 +16,7 @@ abstract class BaseAdresseForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
-      'ville_id'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Ville'), 'add_empty' => false)),
+      'ville_id'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Ville'), 'add_empty' => true)),
       'personne_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Personne'), 'add_empty' => true)),
       'groupe_id'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Groupe'), 'add_empty' => true)),
       'rue'         => new sfWidgetFormInputText(),
@@ -27,7 +27,7 @@ abstract class BaseAdresseForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'          => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
-      'ville_id'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Ville'))),
+      'ville_id'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Ville'), 'required' => false)),
       'personne_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Personne'), 'required' => false)),
       'groupe_id'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Groupe'), 'required' => false)),
       'rue'         => new sfValidatorString(array('max_length' => 45)),

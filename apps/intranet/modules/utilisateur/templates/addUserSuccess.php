@@ -1,27 +1,21 @@
-<!--script javascript d'ajout de champs emails dynamiquement
-	1. on récupère le nombre de champs emails présents
-	2. on génère les éléments à transmettre et l'url
-	3. on met en place le bouton d'ajout de champs qui déclenche l'action addEmails et renvoir le résultat dans la div extraemails-->
-<script type="text/javascript">
-var emails = <?php print_r($form['newEmails']->count())?>;
+<?php use_javascript('addFields.js'); ?>
 
-function addEmails(num) {
-  var r = $.ajax( {
-	type: 'GET',
-	url: '<?php echo url_for('utilisateur/addEmailForm')?>'+'<?php echo ($form->getObject()->isNew()?'':'?id='.$form->getObject()->getId()).($form->getObject()->isNew()?'?num=':'&num=')?>'+num,
-	async: false
-   }).responseText;
-   return r;
-}
-$().ready(function() {
-   $('button#add_email').click(function() {
-	$("#extraemails").append(addEmails(emails));
-	emails = emails + 1;
-  });
-});
+
+
+
+
+<script language="text/javascript">
+
+var arrayFields = new Array();
+arrayFields['emails'] = <?php print_r($form['newEmails']->count()); ?>;
+arrayFields['numeros'] = <?php print_r($form['newPhones']->count()); ?>;
+arrayFields['adresses'] = <?php print_r($form['newAdress']->count()); ?>;
+arrayFields['contacts'] = <?php print_r($form['newContacts']->count()); ?>;
+
 </script>
 
 
+<!--Mise en place du formulaire d'ajout d'utilisateur-->
 <form action="<?php echo url_for('utilisateur/addUser') ?>" method="POST" >
 	<table>
 	<?php
@@ -43,25 +37,66 @@ $().ready(function() {
 		{
 			echo $form['newPhones'][$num]['numero']->renderRow();
 		}
+		//champs du formulaire d'adresse
+		echo $form['newAdress'][0]['rue']->renderRow();
+		echo $form['newAdress'][0]['rue_cptl']->renderRow();
+		echo $form['newAdress'][0]['cp']->renderRow();
+		echo $form['newAdress'][0]['ville']->renderRow();
+		for ($num = 1; $num < $adressesNumber ; $num++ )
+		{
+			echo $form['newAdress'][$num]['rue']->renderRow();
+			echo $form['newAdress'][$num]['rue_cptl']->renderRow();
+			echo $form['newAdress'][$num]['cp']->renderRow();
+			echo $form['newAdress'][$num]['ville']->renderRow();
+		}
 
 		//on ajoute la clé de manière cachée
 		echo $form['_csrf_token']->render();
 	?>
 	<table>
+	<div id="extraadresses">
+	</div>
 	<div id="extraemails">
+	</div>
+	<div id="extranumeros">
+	</div>
+	<div id="extracontacts">
 	</div>
 	</table>
 	<tr>
 	<td>
 		<div>
-			<button id="add_email" type="button"><?php echo "Ajouter un email"?></button>
+			<a href="#" style="color:#000" onClick="addFields(<?php print_r($form['newEmails']->count()); ?>, '<?php echo url_for('utilisateur/addEmailForm') ?>', '#extraemails', 'emails');" >Ajouter un email</a>
 		</div>
 	</td>
 	</tr>
 	<tr>
+	<td>
+		<div>
+			<a href="#" style="color:#000" onClick="addFields(<?php print_r($form['newPhones']->count()); ?>, '<?php echo url_for('utilisateur/addNumeroForm') ?>', '#extranumeros', 'numeros');">Ajouter un numéro</a>
+		</div>
+	</td>
+	</tr>
+	<tr>
+	<tr>
+	<td>
+		<div>	
+			<a href="#"  style="color:#000" onClick="addFields(<?php print_r($form['newAdress']->count()); ?>, '<?php echo url_for('utilisateur/addAdresseForm') ?>', '#extraadresses', 'adresses');">Ajouter une adresse</a>
+		</div>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		<div>
+			<a href="#" style="color:#000" onClick="addFields(<?php print_r($form['newContacts']->count()); ?>, '<?php echo url_for('utilisateur/addContactForm') ?>', '#extracontacts', 'contacts');" >Assigner comme contact professionel</a>
+		</div>
+	</td>
+	</tr>
+
 	  <td colspan="2">
 	    <input type="submit">
 	  </td>
 	</tr>
 	</table>
 </form>
+<!--Fin du formulaire d'ajout d'utilisateur-->

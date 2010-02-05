@@ -12,5 +12,22 @@ class GroupeForm extends BaseGroupeForm
 {
   public function configure()
   {
+	unset($this['id']);
+
+	//liaison avec des sous-formulaires
+
+
+	//mise en place des caractéristiques particulières du formulaire de groupe
+	$this->setWidget('intitule', new sfWidgetFormInput() );
+	$this->setWidget('description', new sfWidgetFormTextArea() );
+
+	//mise en place des validateurs
+	$this->setValidator('intitule', new sfValidatorString(
+		array('required' => true, 'trim' => true), array('required' => 'Vous devez nommer ce groupe')
+	));
+	$this->setValidator('description', new sfValidatorString(
+		array('required' => false)
+	));
+		
   }
 }

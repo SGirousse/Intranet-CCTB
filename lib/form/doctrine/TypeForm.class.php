@@ -12,5 +12,10 @@ class TypeForm extends BaseTypeForm
 {
   public function configure()
   {
+
+	unset($this['id']);
+
+	$groupe = new Groupe();
+	$groupe->Type
   }
 }

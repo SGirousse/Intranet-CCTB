@@ -13,7 +13,7 @@ class TelephoneCollectionForm extends sfForm
 		
 		for ($i=0; $i < $this->getOption('size',2); $i++)
 		{
-			//on intancie un mail
+			//on intancie un téléphone
 			$tel = new Telephone();
 			$tel->Personne = $personne;
 			$form = new TelephoneForm($tel);

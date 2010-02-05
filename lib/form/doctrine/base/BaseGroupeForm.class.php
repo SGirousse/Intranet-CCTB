@@ -24,7 +24,7 @@ abstract class BaseGroupeForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'          => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
-      'parent_id'   => new sfValidatorInteger(),
+      'parent_id'   => new sfValidatorInteger(array('required' => false)),
       'type_id'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Type'))),
       'intitule'    => new sfValidatorString(array('max_length' => 45)),
       'description' => new sfValidatorString(array('required' => false)),

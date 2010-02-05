@@ -1,8 +1,9 @@
-<?
+<?php
 
-/*
- *Classe email validator schema qui hérite du sfValidatorSchema
+/**
+ *Classe de validateur d'email qui hérite du sfValidatorSchema
  *@author : siméon girousse
+ *@see 
  */
 class EmailValidatorSchema extends sfValidatorSchema
 {

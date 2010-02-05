@@ -12,5 +12,18 @@ class ContactProForm extends BaseContactProForm
 {
   public function configure()
   {
+	unset($this['id']);
+
+	//champs à utiliser
+	$this->useFields(array('fonction_id'));
+
+	//
+	$this->setWidget('fonction_id', new sfWidgetFormInput);
+
+	//
+	$this->setValidator('fonction_id', new sfValidatorInteger(
+		array('required' => false)
+	));
+	
   }
 }

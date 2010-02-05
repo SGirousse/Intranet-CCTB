@@ -13,7 +13,7 @@ abstract class BaseGroupeFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'parent_id'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'parent_id'   => new sfWidgetFormFilterInput(),
       'type_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Type'), 'add_empty' => true)),
       'intitule'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'description' => new sfWidgetFormFilterInput(),

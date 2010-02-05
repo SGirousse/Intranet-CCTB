@@ -42,7 +42,8 @@ Adresse:
       fixed: false
       unsigned: false
       primary: false
-      notnull: true
+#notnull must be true !!
+      notnull: false
       autoincrement: false
     personne_id:
       type: integer(4)
@@ -213,9 +214,9 @@ Email:
        foreignType: many
        foreignAlias: Mails
        onDelete: cascade
-#      local: personne_id
-#      foreign: id
-#      type: one
+       local: personne_id
+       foreign: id
+       type: one
     Groupe:
       local: groupe_id
       foreign: id
@@ -297,7 +298,7 @@ Groupe:
       fixed: false
       unsigned: false
       primary: false
-      notnull: true
+      notnull: false
       autoincrement: false
     type_id:
       type: integer(4)
@@ -441,22 +442,6 @@ Personne:
       local: id
       foreign: personne_id
       type: many
-Product:
-  columns:
-    name:           { type: string(255), notnull: true }
-    price:          { type: decimal, notnull: true }
- 
-ProductPhoto:
-  columns:
-    product_id:     { type: integer }
-    filename:       { type: string(255) }
-    caption:        { type: string(255), notnull: true }
-  relations:
-    Product:
-      alias:        Product
-      foreignType:  many
-      foreignAlias: Photos
-      onDelete:     cascade
 Region:
   connection: doctrine
   tableName: region
