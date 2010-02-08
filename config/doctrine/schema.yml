@@ -42,7 +42,6 @@ Adresse:
       fixed: false
       unsigned: false
       primary: false
-#notnull must be true !!
       notnull: false
       autoincrement: false
     personne_id:
@@ -88,18 +87,40 @@ Adresse:
       notnull: true
       autoincrement: false
   relations:
-    Ville:
-      local: ville_id
+    Groupe:
+      local: groupe_id
       foreign: id
       type: one
     Personne:
       local: personne_id
       foreign: id
       type: one
-    Groupe:
-      local: groupe_id
+    Ville:
+      local: ville_id
       foreign: id
       type: one
+Categorie:
+  connection: doctrine
+  tableName: categorie
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    libelle:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Groupe:
+      local: id
+      foreign: categorie_id
+      type: many
 ContactPro:
   connection: doctrine
   tableName: contactPro
@@ -114,34 +135,31 @@ ContactPro:
       type: integer(4)
       fixed: false
       unsigned: false
-      primary: false
-      notnull: true
+      primary: true
       autoincrement: false
     groupe_id:
       type: integer(4)
       fixed: false
       unsigned: false
-      primary: false
-      notnull: true
+      primary: true
       autoincrement: false
     fonction_id:
       type: integer(4)
       fixed: false
       unsigned: false
-      primary: false
-      notnull: true
+      primary: true
       autoincrement: false
   relations:
-    Personne:
-      local: personne_id
+    Fonction:
+      local: fonction_id
       foreign: id
       type: one
     Groupe:
       local: groupe_id
       foreign: id
       type: one
-    Fonction:
-      local: fonction_id
+    Personne:
+      local: personne_id
       foreign: id
       type: one
 Departement:
@@ -209,16 +227,12 @@ Email:
       notnull: true
       autoincrement: false
   relations:
-    Personne:
-       alias : Personne
-       foreignType: many
-       foreignAlias: Mails
-       onDelete: cascade
-       local: personne_id
-       foreign: id
-       type: one
     Groupe:
       local: groupe_id
+      foreign: id
+      type: one
+    Personne:
+      local: personne_id
       foreign: id
       type: one
 Fax:
@@ -253,12 +267,12 @@ Fax:
       notnull: true
       autoincrement: false
   relations:
-    Personne:
-      local: personne_id
-      foreign: id
-      type: one
     Groupe:
       local: groupe_id
+      foreign: id
+      type: one
+    Personne:
+      local: personne_id
       foreign: id
       type: one
 Fonction:
@@ -300,7 +314,7 @@ Groupe:
       primary: false
       notnull: false
       autoincrement: false
-    type_id:
+    categorie_id:
       type: integer(4)
       fixed: false
       unsigned: false
@@ -322,12 +336,8 @@ Groupe:
       notnull: false
       autoincrement: false
   relations:
-    Groupe:
-      local: id
-      foreign: parent_id
-      type: many
-    Type:
-      local: type_id
+    Categorie:
+      local: categorie_id
       foreign: id
       type: one
     Adresse:
@@ -343,6 +353,10 @@ Groupe:
       foreign: groupe_id
       type: many
     Fax:
+      local: id
+      foreign: groupe_id
+      type: many
+    Mail:
       local: id
       foreign: groupe_id
       type: many
@@ -425,7 +439,10 @@ Personne:
       notnull: false
       autoincrement: false
   relations:
-    sfGuardUser: { local: sf_guard_user_id, foreign: id, foreignType: one }
+    SfGuardUser:
+      local: sf_guard_user_id
+      foreign: id
+      type: one
     Adresse:
       local: id
       foreign: personne_id
@@ -434,7 +451,15 @@ Personne:
       local: id
       foreign: personne_id
       type: many
+    Email:
+      local: id
+      foreign: personne_id
+      type: many
     Fax:
+      local: id
+      foreign: personne_id
+      type: many
+    Mail:
       local: id
       foreign: personne_id
       type: many
@@ -496,36 +521,14 @@ Telephone:
       notnull: true
       autoincrement: false
   relations:
-    Personne:
-      local: personne_id
-      foreign: id
-      type: one
     Groupe:
       local: groupe_id
       foreign: id
       type: one
-Type:
-  connection: doctrine
-  tableName: type
-  columns:
-    id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    libelle:
-      type: string(45)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-  relations:
-    Groupe:
-      local: id
-      foreign: type_id
-      type: many
+    Personne:
+      local: personne_id
+      foreign: id
+      type: one
 Ville:
   connection: doctrine
   tableName: ville

@@ -87,11 +87,48 @@ class utilisateurActions extends sfActions
 			{	
 				//sauvegarde des informations
 				$this->form->save();
+
 				//redirection de l'utilisateur
-				$this->redirect('utilisateur/index');
+				//$this->redirect('utilisateur/index');
 			}
 		}
 	}
+	public function executePopupAddGroup(sfWebRequest $request)
+	{
+		//creation d'un nouveau formulaire pour un groupe
+		$this->form = new GroupeForm();
+
+		//on récupère les paramètres de la requête
+		$parametres = $request->getParameter('groupe');
+
+		//si la méthode d'envoie est bien post on continue les traitements
+		if($request->isMethod('post'))
+		{
+			//récupération des paramètres pour l'ajout au formulaire
+			$this->form->bind($parametres);
+
+			//si le formulaire est valide
+			if ($this->form->isValid())
+			{	
+				//sauvegarde des informations
+				$this->form->save();
+
+				//redirection de l'utilisateur
+				//$this->redirect('utilisateur/index');
+			}else{
+				$this->id = $parametres;
+			}
+		}else{
+			$this->id = 0;
+		}
+	}
+
+	/*delete testSucess et sebsucess)
+	public function executeSeb($request)
+	{
+		$parametres = $request->getParameter('groupe');
+		$this->test = $parametres;
+	}*/
 	
 	/****	Fonctions d'ajout dynamique de champs	****/
 
@@ -198,9 +235,11 @@ class utilisateurActions extends sfActions
 
 		//on ajoute un formulaire d'adresse à l'aide de la fonction addAdresse
 		$form->addContactPro($number);
+	
+		$form_Grp = new GroupeForm();
 
 		//on retourne le partiel pour l'affichage
-		return $this->renderPartial( 'addContact', array('form' => $form, 'num' => $number ));
+		return $this->renderPartial( 'addContact', array('form' => $form, 'num' => $number, 'form_Grp' => $form_Grp ));
 	}
 }
 ?>

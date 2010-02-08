@@ -1,0 +1,7 @@
+groupe:
+ g_1:
+   intitule: DartFrance
+   description: Vente de gros
+   type_id: 1
+   categorie_id: 1
+

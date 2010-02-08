@@ -1,0 +1,12 @@
+categorie:
+  c_1:
+    libelle: entreprise
+  c_2:
+    libelle: association
+  c_3:
+    libelle: administration
+  c_4:
+    libelle: service
+type:
+  t_1:
+    libelle: rooooh

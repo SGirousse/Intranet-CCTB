@@ -12,4 +12,8 @@
  */
 class Groupe extends BaseGroupe
 {
+	public function __toString()
+	{
+		return $this->getIntitule();
+	}
 }

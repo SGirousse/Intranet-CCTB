@@ -26,6 +26,7 @@ arrayFields['contacts'] = <?php print_r($form['newContacts']->count()); ?>;
 		echo $form['prenom']->renderRow();
 		echo $form['date_naissance']->renderRow();
 		echo $form['civ']->renderRow();
+		echo $form['sf_guard_user_id']->renderRow();
 		//champs du formulaire d'email
 		echo $form['newEmails'][0]['email']->renderRow();
 		for ($num = 1 ; $num < $emailsNumber ; $num++)

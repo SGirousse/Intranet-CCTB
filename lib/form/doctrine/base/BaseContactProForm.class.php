@@ -16,16 +16,16 @@ abstract class BaseContactProForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
-      'personne_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Personne'), 'add_empty' => false)),
-      'groupe_id'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Groupe'), 'add_empty' => false)),
-      'fonction_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Fonction'), 'add_empty' => false)),
+      'personne_id' => new sfWidgetFormInputHidden(),
+      'groupe_id'   => new sfWidgetFormInputHidden(),
+      'fonction_id' => new sfWidgetFormInputHidden(),
     ));
 
     $this->setValidators(array(
       'id'          => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'id', 'required' => false)),
-      'personne_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Personne'))),
-      'groupe_id'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Groupe'))),
-      'fonction_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Fonction'))),
+      'personne_id' => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'personne_id', 'required' => false)),
+      'groupe_id'   => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'groupe_id', 'required' => false)),
+      'fonction_id' => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'fonction_id', 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('contact_pro[%s]');

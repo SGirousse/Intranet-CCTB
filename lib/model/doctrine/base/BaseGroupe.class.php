@@ -12,6 +12,7 @@ Doctrine_Manager::getInstance()->bindComponent('Groupe', 'doctrine');
  * @property integer $type_id
  * @property string $intitule
  * @property string $description
+ * @property integer $categorie_id
  * @property Doctrine_Collection $Groupe
  * @property Type $Type
  * @property Doctrine_Collection $Adresse
@@ -19,31 +20,36 @@ Doctrine_Manager::getInstance()->bindComponent('Groupe', 'doctrine');
  * @property Doctrine_Collection $Email
  * @property Doctrine_Collection $Fax
  * @property Doctrine_Collection $Telephone
+ * @property Categorie $Categorie
  * 
- * @method integer             getId()          Returns the current record's "id" value
- * @method integer             getParentId()    Returns the current record's "parent_id" value
- * @method integer             getTypeId()      Returns the current record's "type_id" value
- * @method string              getIntitule()    Returns the current record's "intitule" value
- * @method string              getDescription() Returns the current record's "description" value
- * @method Doctrine_Collection getGroupe()      Returns the current record's "Groupe" collection
- * @method Type                getType()        Returns the current record's "Type" value
- * @method Doctrine_Collection getAdresse()     Returns the current record's "Adresse" collection
- * @method Doctrine_Collection getContactPro()  Returns the current record's "ContactPro" collection
- * @method Doctrine_Collection getEmail()       Returns the current record's "Email" collection
- * @method Doctrine_Collection getFax()         Returns the current record's "Fax" collection
- * @method Doctrine_Collection getTelephone()   Returns the current record's "Telephone" collection
- * @method Groupe              setId()          Sets the current record's "id" value
- * @method Groupe              setParentId()    Sets the current record's "parent_id" value
- * @method Groupe              setTypeId()      Sets the current record's "type_id" value
- * @method Groupe              setIntitule()    Sets the current record's "intitule" value
- * @method Groupe              setDescription() Sets the current record's "description" value
- * @method Groupe              setGroupe()      Sets the current record's "Groupe" collection
- * @method Groupe              setType()        Sets the current record's "Type" value
- * @method Groupe              setAdresse()     Sets the current record's "Adresse" collection
- * @method Groupe              setContactPro()  Sets the current record's "ContactPro" collection
- * @method Groupe              setEmail()       Sets the current record's "Email" collection
- * @method Groupe              setFax()         Sets the current record's "Fax" collection
- * @method Groupe              setTelephone()   Sets the current record's "Telephone" collection
+ * @method integer             getId()           Returns the current record's "id" value
+ * @method integer             getParentId()     Returns the current record's "parent_id" value
+ * @method integer             getTypeId()       Returns the current record's "type_id" value
+ * @method string              getIntitule()     Returns the current record's "intitule" value
+ * @method string              getDescription()  Returns the current record's "description" value
+ * @method integer             getCategorieId()  Returns the current record's "categorie_id" value
+ * @method Doctrine_Collection getGroupe()       Returns the current record's "Groupe" collection
+ * @method Type                getType()         Returns the current record's "Type" value
+ * @method Doctrine_Collection getAdresse()      Returns the current record's "Adresse" collection
+ * @method Doctrine_Collection getContactPro()   Returns the current record's "ContactPro" collection
+ * @method Doctrine_Collection getEmail()        Returns the current record's "Email" collection
+ * @method Doctrine_Collection getFax()          Returns the current record's "Fax" collection
+ * @method Doctrine_Collection getTelephone()    Returns the current record's "Telephone" collection
+ * @method Categorie           getCategorie()    Returns the current record's "Categorie" value
+ * @method Groupe              setId()           Sets the current record's "id" value
+ * @method Groupe              setParentId()     Sets the current record's "parent_id" value
+ * @method Groupe              setTypeId()       Sets the current record's "type_id" value
+ * @method Groupe              setIntitule()     Sets the current record's "intitule" value
+ * @method Groupe              setDescription()  Sets the current record's "description" value
+ * @method Groupe              setCategorieId()  Sets the current record's "categorie_id" value
+ * @method Groupe              setGroupe()       Sets the current record's "Groupe" collection
+ * @method Groupe              setType()         Sets the current record's "Type" value
+ * @method Groupe              setAdresse()      Sets the current record's "Adresse" collection
+ * @method Groupe              setContactPro()   Sets the current record's "ContactPro" collection
+ * @method Groupe              setEmail()        Sets the current record's "Email" collection
+ * @method Groupe              setFax()          Sets the current record's "Fax" collection
+ * @method Groupe              setTelephone()    Sets the current record's "Telephone" collection
+ * @method Groupe              setCategorie()    Sets the current record's "Categorie" value
  * 
  * @package    intranet-cctb
  * @subpackage model
@@ -99,6 +105,15 @@ abstract class BaseGroupe extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => '',
              ));
+        $this->hasColumn('categorie_id', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => '4',
+             ));
     }
 
     public function setUp()
@@ -131,5 +146,9 @@ abstract class BaseGroupe extends sfDoctrineRecord
         $this->hasMany('Telephone', array(
              'local' => 'id',
              'foreign' => 'groupe_id'));
+
+        $this->hasOne('Categorie', array(
+             'local' => 'categorie_id',
+             'foreign' => 'id'));
     }
 }

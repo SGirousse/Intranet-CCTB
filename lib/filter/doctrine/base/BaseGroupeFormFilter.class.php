@@ -13,17 +13,19 @@ abstract class BaseGroupeFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'parent_id'   => new sfWidgetFormFilterInput(),
-      'type_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Type'), 'add_empty' => true)),
-      'intitule'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'description' => new sfWidgetFormFilterInput(),
+      'parent_id'    => new sfWidgetFormFilterInput(),
+      'type_id'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Type'), 'add_empty' => true)),
+      'intitule'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'description'  => new sfWidgetFormFilterInput(),
+      'categorie_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Categorie'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'parent_id'   => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
-      'type_id'     => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Type'), 'column' => 'id')),
-      'intitule'    => new sfValidatorPass(array('required' => false)),
-      'description' => new sfValidatorPass(array('required' => false)),
+      'parent_id'    => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'type_id'      => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Type'), 'column' => 'id')),
+      'intitule'     => new sfValidatorPass(array('required' => false)),
+      'description'  => new sfValidatorPass(array('required' => false)),
+      'categorie_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Categorie'), 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('groupe_filters[%s]');
@@ -43,11 +45,12 @@ abstract class BaseGroupeFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
-      'id'          => 'Number',
-      'parent_id'   => 'Number',
-      'type_id'     => 'ForeignKey',
-      'intitule'    => 'Text',
-      'description' => 'Text',
+      'id'           => 'Number',
+      'parent_id'    => 'Number',
+      'type_id'      => 'ForeignKey',
+      'intitule'     => 'Text',
+      'description'  => 'Text',
+      'categorie_id' => 'ForeignKey',
     );
   }
 }

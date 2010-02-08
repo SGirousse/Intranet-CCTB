@@ -79,8 +79,7 @@ abstract class BaseEmail extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('Personne', array(
              'local' => 'personne_id',
-             'foreign' => 'id',
-             'onDelete' => 'cascade'));
+             'foreign' => 'id'));
 
         $this->hasOne('Groupe', array(
              'local' => 'groupe_id',

@@ -52,8 +52,7 @@ abstract class BaseContactPro extends sfDoctrineRecord
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
+             'primary' => true,
              'autoincrement' => false,
              'length' => '4',
              ));
@@ -61,8 +60,7 @@ abstract class BaseContactPro extends sfDoctrineRecord
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
+             'primary' => true,
              'autoincrement' => false,
              'length' => '4',
              ));
@@ -70,8 +68,7 @@ abstract class BaseContactPro extends sfDoctrineRecord
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
+             'primary' => true,
              'autoincrement' => false,
              'length' => '4',
              ));
